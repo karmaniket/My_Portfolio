@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karmaniket</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/3b54bb2e71.js" crossorigin="anonymous"></script>
+    <link href="https://db.onlinewebfonts.com/c/0f7afd1dfbc2d0be44b85482d7931408?family=EuroMachina+BT+W03+Rg"
+        rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/ce1b0756ce63b292f84726064dfd4d5f?family=Posterama+1913+W01+Bold"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resource/icon.png">
+</head>
+
+<body>
+    <div class="pop-up">
+        <nav class="res-nav">
+            <a href="#" class="logo">KARMANIKET</a>
+            <img src="./resource/close.png" onclick="closeSideBar()" alt="">
+        </nav>
+
+        <ul>
+            <div class="lower-bar">
+                <li><a href="#home" onclick="closeSideBar()">Home</a></li>
+                <li><a href="#projects" onclick="closeSideBar()">Projects</a></li>
+                <li><a href="#workshop" onclick="closeSideBar()">Workshop</a></li>
+                <li><a href="#about" onclick="closeSideBar()">About</a></li>
+                <li><a href="#contact" onclick="closeSideBar()">Contact</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="final-container">
+        <div id="header">
+            <div class="container">
+                <video autoplay loop muted plays-inline class="bg-video">
+                    <source src="resource/header-bg.mp4" type="video/mp4">
+
+                </video>
+
+                <video autoplay loop muted plays-inline class="mobile-bg">
+                    <source src="resource/bg-vertical.mp4" type="video/mp4">
+                </video>
+
+                <nav class="desk-nav">
+                    <a href="#" class="logo">KARMANIKET</a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#workshop">Workshop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="res-nav">
+                    <a href="#" class="logo">KARMANIKET</a>
+                    <img src="resource/menu.png" onclick="showSideBar()" alt="">
+                </nav>
+
+                <div class="header-text">
+                    <p>Born To <span>Innovate</span></p>
+                    <div class="think">
+                        <h1>54 48 49 4E 4B.</h1>
+                    </div>
+                    <div class="plan">
+                        <h1>50 4C 41 4E.</h1>
+                    </div>
+                    <div class="execute">
+                        <h1>45 58 45 43 55 54 45...</h1>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/karmaniket" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/karmaniket" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.youtube.com/avmades" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/avmades" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/aniket.vishwakarma.3386585" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------ABOUT ME----------------------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <h2 class="subtitle res-about">About Me</h2>
+                    <div class="about-col-1">
+                        <img src="resource/pfp.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p class="para">
+                            <span>Aniket Vishwakarma</span>, an IT graduate from the University of Mumbai, possesses an undying
+                            passion for <span>Robotics</span>, <span>Artificial intelligence</span> and <span>Machine learning</span>. 
+                            Has extensive expertise in <span>Data Science</span> and <span>IoT</span>, He adheres to the philosophy that 
+                            a degree does not always define one's profession, embracing a learn-by-doing approach. 
+                            Driven by exceptional adaptability, problem-solving skills, and meticulous attention to detail. 
+                            He also makes <span>YouTube</span> videos where he builds projects that seamlessly integrate hardware and software. 
+                            He is looking forward to showcase his skills in a dynamic work environment, contributing to projects and 
+                            collaborating with like-minded individuals.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('eduaction')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="eduaction">
+                            <ul>
+                                <li><span>2021 - 2024</span><br>V.P.M's RZ Shah College Mulund, Mumbai University<br>
+                                    Bachelor of Science in Information Technology, Graduate</li>
+                                <li><span>2020 - 2021</span><br>Wamanrao Muranjan Jr. College, Mulund<br>
+                                    Class XII HSC Board - Science - PCMB
+                                </li>
+                                <li><span>2018 - 2019</span><br>Dayanand Vedik Vidyalaya Hindi High School, Mulund,<br>
+                                    Class X SSC Board</li>
+                                <li><span>2009 - 2017</span><br>GV Scheme Municipal Hindi School, Mulund<br>
+                                    I - VIII Grade</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li>Programming</li>
+                                <li>Data Science</li>
+                                <li>AI & ML</li>
+                                <li>IoT / Robotics</li>
+                                <li>DBMS</li>
+                                <li>Electronics</li>
+                                <li>Mechanics</li>
+                                <li>Web Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Interests">
+                            <ul class="Interests">
+                                <li>Physics Enthusiast</li>
+                                <li>Amateur Astronomy</li>
+                                <li>Automobile Enthusiast</li>
+                                <li>Developing Virtual Assistant</li>
+                                <li>Automobile Design</li>
+                                <li>VFX</li>
+                                <li>Cinematography</li>
+                                <li>Model Building</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------Workshop---------------------------------->
+
+        <div id="workshop">
+            <div class="container">
+                <h1 class="subtitle">Workshop</h1>
+                <h2 class="subtitle hide-workshop">Workshop</h2>
+                <div class="workshop-list">
+                    <div>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <h2>Theories</h2>
+                        <p>"A fraction of my thoughts"</p>
+                        <a href="theories.html" target="_blank" class="workshop-btn">Explore</a>
+                    </div>
+                    <div>
+                        <!-- <i class="fa-regular fa-lightbulb"></i> -->
+                        <i class="fa-solid fa-gears"></i>
+                        <h2>Electromechanic</h2>
+                        <p>"Where electronics meets mechanics"</p>
+                        <a href="electromec.html" target="_blank" class="workshop-btn">Explore</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h2>Blueprints</h2>
+                        <p>"Have my designs"</p>
+                        <a href="https://www.patreon.com/avmades" target="_blank" class="workshop-btn">Explore</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-florin-sign"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                        <h2>VFX</h2>
+                        <p>"Sometimes i do vfx editing"</p>
+                        <a href="vfx.html" target="_blank" class="workshop-btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------------------Projects--------------------------------- -->
+
+        <div id="projects">
+            <div class="container1">
+                <h1 class="subtitle">Projects</h1>
+                <h2 class="subtitle hide-projects">Projects</h2>
+                <div class="project-card">
+                    <div>
+                        <img src="resource/projects/assistent06.png">
+                        <h2 class="card-title">Assistant</h2>
+                        <p>
+                            A simple Python-based assistant that utilizes the Wolfram Alpha
+                            and Wikipedia APIs to provide answers to user queries via GUI text inputs.
+                        </p>
+                        <a href="https://github.com/karmaniket/assistant_06" target="_blank"
+                            class="project-btn">View</a>
+                    </div>
+                    <div>
+                        <img src="resource/projects/TwoWheelsonRent.png">
+                        <h2 class="card-title">TwoWheelsonRent</h2>
+                        <p>
+                            A simple bicycle rental website. Teaming up with my Colleague partner for coding expertise,
+                            where I've meticulously designed the User Interface and frontend.
+                            developed with precision and collaboration.
+                        </p>
+                        <a href="https://twowheelsonrent.vercel.app" target="_blank" class="project-btn">View</a>
+                    </div>
+                    <div>
+                        <img src="resource/projects/train lcd.png">
+                        <h2 class="card-title">Train stops indicator</h2>
+                        <p>
+                            A small Arduino project interfacing with 16*2 LC display,
+                            replicating the real-time information which you see in Mumbai Local train's display.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/karmaniket_arduino-electronics-lcddisplay-activity-7113614355459432450-Fdif?utm_source=share&utm_medium=member_desktop"
+                            target="_blank" class="project-btn">View</a>
+                    </div>
+                    <div>
+                        <img src="resource/projects/ldr circuit.png">
+                        <h2 class="card-title">LDR PCB design</h2>
+                        <p>
+                            A simple but efficient LDR sensor circuit. This circuit is made
+                            for light-sensitive applications at small scale.
+                        </p>
+                        <a href="https://www.linkedin.com/posts/karmaniket_kicad-electronics-iot-activity-7158850855222288384-L5GQ?utm_source=share&utm_medium=member_desktop"
+                            target="_blank" class="project-btn">View</a>
+                    </div>
+                    <div>
+                        <img src="resource/projects/academic predictor.png">
+                        <h2 class="card-title">Academic Predictor</h2>
+                        <p>
+                            An intuitive tool designed for students and graduates,
+                            which tells you about where you were or where you would be in your academic journey at a
+                            specific point in time.
+                        </p>
+                        <a href="https://academicpredictor.pages.dev" target="_blank" class="project-btn">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------------------Contact--------------------------------- -->
+
+        <div id="contact">
+            <div class="container2">
+                <div class="row">
+                    <div class="left">
+                        <h1 class="subtitle-contact ">Contact Me</h1>
+                        <h2 class="subtitle-contact hide-contact">Contact Me</h2>
+                        <a href="https://mail.google.com/mail/" target="_blank" class="email">
+                            <p class="email-font"><i class="fa-solid fa-envelope"></i>
+                        </a>karmaniket@gmail.com</p>
+                        <div class="icons">
+                            <a href="https://www.linkedin.com/in/karmaniket" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/karmaniket" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.youtube.com/avmades" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/avmades" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/aniket.vishwakarma.3386585" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <a href="resource/Files/Karmaniket_resume.pdf" download class="resume-btn">Download My
+                            Resume</a>
+                    </div>
+                    <div class="right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="gmail" name="gmail" placeholder="Your Gmail" required>
+                            <textarea name="Message" rows="6"
+                                placeholder="I'd like to know any Idea/suggestion that you have"></textarea>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 karmaniket. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- JS --------------------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        //  <------------Popup display logic------------->
+
+        const mobileBar = document.querySelector('.pop-up');
+        const allContent = document.querySelector('.final-container');
+
+        function showSideBar() {
+            allContent.style.display = 'none';
+            mobileBar.style.display = "block"
+        }
+
+        function closeSideBar() {
+            allContent.style.display = 'block';
+            mobileBar.style.display = "none"
+        }
+    </script>
+    <!-- -------------------------contact form------------------------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjZcPmev5PkrwxWxmyJPYGitFD03726roDwY-rif-iPvoHufZfEaTDfhjcnAtXTkmtVw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Your message has been sent successfully!!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
