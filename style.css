@@ -8,15 +8,16 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    padding-top: 50px;
+    padding-top: 51px;
     background-color: #262626;
 }
 #header{
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     background-size: cover;
     background-position: center;
     z-index: 0;
+    background: rgba(0,0,0,0.6);
 }
 .bg-video{
     position: absolute;
@@ -35,7 +36,7 @@ body{
 }
 
 .container{
-    padding: 10px 7%;
+    padding: 40px 7%;
 }
 nav{
     position: fixed;
@@ -82,7 +83,9 @@ nav ul li a:hover{
     margin: 15% 25% 0;
     text-align: center;
     color: #E8E8ED;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(0, 132, 255, 0.95)) 
+            drop-shadow(0em 0em 0.07631406em rgba(102, 153, 255, 0.75)) 
+            drop-shadow(0em 0em 0.22894219em rgba(179, 140, 255, 0.44));
 }
 .header-text p{
     font-family: "Posterama 1913 W01 Bold";
@@ -93,15 +96,17 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 .header-text p span:hover{
-    color: #262626;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    color: #E8E8ED;
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .header-text h1{
     font-family: "Posterama 1913 W01 Bold";
 }
 .think h1{
     font-size: 40px;
-    margin: 10px 20% 0;
+    margin: 10px 25% 0;
 }
 .think h1:hover{
     font-size: 0%;
@@ -109,11 +114,13 @@ nav ul li a:hover{
 .think h1:hover::after{
     content: "THINK.";
     font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .plan h1{
     font-size: 40px;
-    margin: 10px 26% 0;
+    margin: 10px 30% 0;
 }
 .plan h1:hover{
     font-size: 0%;
@@ -121,19 +128,23 @@ nav ul li a:hover{
 .plan h1:hover::after{
     content: "PLAN.";
     font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .execute h1{
     font-size: 40px;
-    margin: 10px 5% 0;
+    margin: 10px 15% 0;
 }
 .execute h1:hover{
     font-size: 0%;
 }
 .execute h1:hover::after{
-    content: "EXECUTE...";
+    content: "EXECUTE.";
     font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .social{
     text-decoration: none;
@@ -147,7 +158,9 @@ nav ul li a:hover{
     transition: background 0.3s, transform 0.3s;
 }
 .social a:hover{
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     transform: translateY(-5px);
 }
 
@@ -168,14 +181,15 @@ nav ul li a:hover{
     display: none;
 }
 .about-col-1{
-    flex-basis: 36%;
+    flex-basis: 30%;
+    margin: 25px;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 50%;
 }
 .about-col-2{
-    flex-basis: 56%;
+    flex-basis: 60%;
 }
 .para {
     font-size: 20px;
@@ -193,7 +207,9 @@ nav ul li a:hover{
     font-family: YAFDfaqxCGc-0;
     line-height: 1.19473041em;
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .tab-titles{
     display: flex;
@@ -209,7 +225,6 @@ nav ul li a:hover{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(255,190,0);
     background: linear-gradient(90deg, rgba(255,190,0,1) 30%, rgba(255,137,0,1) 60%);
     position: absolute;
     left: 0;
@@ -307,10 +322,11 @@ nav ul li a:hover{
 }
 .workshop-list div:hover{
     transform: translateY(-10px);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     color: rgba(22, 22, 23, 88);
-    /* background-color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000)); */
+    /* background-color: #ffbd59; */
+    /* filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000)); */ */
 }
 
 /* -----------------------------------Theories--------------------------------- */
@@ -333,7 +349,9 @@ nav ul li a:hover{
 #theories h1{
     font-family: "Posterama 1913 W01 Bold";
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 #theories .hide-theory{
     display: none;
@@ -384,7 +402,8 @@ nav ul li a:hover{
     background-color: #C1C1C1;
 }
 .theories-list div:hover{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     transform: translateY(-10px);
     color: rgba(22, 22, 23, 88);
     
@@ -406,7 +425,9 @@ nav ul li a:hover{
     text-align: center;
     font-family: "Posterama 1913 W01 Bold";
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .electromec-desc{
     display: flex;
@@ -451,7 +472,9 @@ nav ul li a:hover{
     text-align: center;
     font-family: "Posterama 1913 W01 Bold";
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .blueprints-card{
     display: grid;
@@ -484,7 +507,9 @@ nav ul li a:hover{
     text-align: center;
     font-family: "Posterama 1913 W01 Bold";
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .vfx-grid{
     display: grid;
@@ -509,7 +534,9 @@ nav ul li a:hover{
     text-align: center;
     font-family: "Posterama 1913 W01 Bold";
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .picture img{
     height: auto;
@@ -537,7 +564,7 @@ nav ul li a:hover{
 /*---------------------------------Projects---------------------------  */
 
 .container1{
-    padding: 10px 13%;
+    padding: 40px 13%;
 }
 #projects{
     padding: 50px 0px;
@@ -554,55 +581,64 @@ nav ul li a:hover{
 #projects .hide-projects{
     display: none;
 }
-.project-card{
+
+.project-card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 30px;
     margin-top: 50px;
 }
-.project-card div{
+
+.project-card div {
+    display: block;
     background: #262626;
-    padding: 5px 20px 0;
+    padding: 20px;
     font-size: 15px;
     font-weight: 100;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
-
     position: relative;
-    justify-content: space-between;
-    padding: 5px 20px 50px;
+    text-align: left;
+    min-height: 220px;
 }
-.project-card img{
-    padding: 15px 0;
-    width: 100%;
-    border-radius: 1px;
-    display: block;
+
+.project-card img {
+    width: 40%;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 50px;
 }
-.card-title{
+
+.card-title {
     font-size: 25px;
-    margin: 13px;
+    margin: 25px 0 15px;
+    display: block;
+    overflow: hidden;
 }
+
 .project-card div p {
     font-size: 20px;
-    margin: 0 0 20px;
-    text-decoration: none;
+    margin: 0 15px 50px 0;
     text-align: left;
-
     font-family: YAFDfaqxCGc-0;
     line-height: 1.19473041em;
+    overflow: hidden;
 }
-.project-card div a{
+
+.project-card div a {
     text-decoration: none;
     font-size: 17px;
-    color: rgba(22, 22, 23, 88);
-    margin-top: 10px;
-    display: inline-block;
-
+    color: rgba(22, 22, 23, 0.88);
+    display: block;
     position: absolute;
-    bottom: 15px;
-    left: 35%;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
 }
-.project-btn{
+
+.project-btn {
     display: block;
     margin: 0 auto;
     width: fit-content;
@@ -612,19 +648,21 @@ nav ul li a:hover{
     text-decoration: none;
     background-color: #C1C1C1;
 }
-.project-card div:hover{
+
+.project-card div:hover {
     transform: translateY(-10px);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     color: rgba(22, 22, 23, 88);
 }
 
 /* ----------------------------------Contact--------------------------------- */
 
 .container2{
-    padding: 10px 15%;
+    padding: 50px 15%;
 }
 #contact{
-    padding-top: 70px;
+    padding-top: 50px;
     color: #E8E8ED;
     font-size: 25px;
     text-align: center;
@@ -691,7 +729,9 @@ nav ul li a:hover{
 .resume-btn:hover{
     color: #262626;
     background-color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .right form{
     width: 100%;
@@ -724,7 +764,9 @@ form input, form textarea{
 }
 .submit-btn:hover{
     background-color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 #msg{
     color: #E8E8ED;
@@ -766,11 +808,24 @@ form input, form textarea{
     .bg-video {
         display: none;
     }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+        background: rgba(0,0,0,0.6);
+    }
     .mobile-bg{
         display: flex;
         height: 100%;
-        width: 100vw;
+        width: auto;
         color: azure;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
     body{
         padding-top: 0;
@@ -800,7 +855,7 @@ form input, form textarea{
     }
     .header-text p  {
         font-size: 25px;
-        margin-bottom: 13px;
+        margin-bottom: 0px 50px 13px;
     }
     .header-text h1{
         font-size: 27px;
@@ -808,8 +863,16 @@ form input, form textarea{
     .think h1:hover::after, .plan h1:hover::after, .execute h1:hover::after{
         font-size: 27px;
     }
-    .think h1, .plan h1, .execute h1{
-        margin: 7px 0;
+    .think h1{
+        margin: 7px 18%;
+        padding: 0;
+    }
+    .plan h1{
+        margin: 7px 25%;
+        padding: 0;
+    }
+    .execute h1{
+        margin: 7px 18px;
         padding: 0;
     }
     .social{
@@ -827,7 +890,8 @@ form input, form textarea{
     /* ------------------       Res ABOUT ME    ---------------------- */
 
     #about{
-        margin-top: 50px;
+        margin-top: 10px;
+        padding-bottom: 0px;
     }
     .tab-links{
         font-size: 20px;
@@ -904,7 +968,9 @@ form input, form textarea{
         justify-content: center;
         font-family: "Posterama 1913 W01 Bold";
         color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     }
     .theories-list div p{
         font: bolder;
@@ -930,7 +996,9 @@ form input, form textarea{
         justify-content: center;
         font-family: "Posterama 1913 W01 Bold";
         color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     }
 
     /* --------------------     electromec res  ----------------------------------- */
@@ -943,7 +1011,9 @@ form input, form textarea{
         justify-content: center;
         font-family: "Posterama 1913 W01 Bold";
         color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     }
     #electromec-con{
         margin-top: 50px;
@@ -979,7 +1049,9 @@ form input, form textarea{
         justify-content: center;
         font-family: "Posterama 1913 W01 Bold";
         color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
+                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     }
 
 /* ---------------------        theory desc res     ----------------------------------- */
@@ -1011,6 +1083,53 @@ form input, form textarea{
 
     /* ------------------------------------    Projects    ------------------------------------ */
 
+    .container1 {
+        padding: 0 5%;
+    }
+    
+    .project-card {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .project-card div {
+        padding: 5px 15px 60px;
+    }
+    
+    .project-card img {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    
+    .card-title {
+        font-size: 22px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .project-card div p {
+        font-size: 18px;
+        margin: 0 0 30px;
+        clear: both;
+    }
+    
+    .project-card div a {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15px;
+    }
+    
+    .project-btn {
+        padding: 6px 25px;
+        font-size: 16px;
+    }
+
+    .container1 {
+    padding: 0px 13%;
+    }
     #projects h1{
         display: none;
     }
@@ -1030,6 +1149,9 @@ form input, form textarea{
     
     /* -----------------------------------    Contact ------------------------------------------ */
 
+    .container2{
+        padding: 0px 10% 20px;
+    }
     .left h1{
         display: none;
     }
@@ -1146,4 +1268,3 @@ form input, form textarea{
 .pop-up{
     display: none;
 }
-
