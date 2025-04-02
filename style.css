@@ -917,8 +917,7 @@ form input, form textarea{
     .res-about{
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
-        margin-top: -30px;
+        margin-bottom: 20px;
     }
     .about-col-2 .subtitle{
         display: none;
