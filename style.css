@@ -809,8 +809,9 @@ form input, form textarea{
         display: none;
     }
     #header{
+        margin-top: -56px;
         width: 100%;
-        height: 93vh;
+        height: 100vh;
         background-size: cover;
         background-position: center;
         z-index: 0;
