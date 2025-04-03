@@ -603,14 +603,14 @@ nav ul li a:hover{
 }
 
 .project-card img {
-    width: 40%;
+    width: 35%;
     border-radius: 5px;
     float: left;
     margin-left: 10px;
     margin-right: 50px;
 }
 .project-card video {
-    width: 40%;
+    width: 35%;
     border-radius: 5px;
     float: left;
     margin-left: 10px;
