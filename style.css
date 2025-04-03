@@ -609,7 +609,13 @@ nav ul li a:hover{
     margin-left: 10px;
     margin-right: 50px;
 }
-
+.project-card video {
+    width: 40%;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 50px;
+}
 .card-title {
     font-size: 25px;
     margin: 25px 0 15px;
@@ -1102,7 +1108,13 @@ form input, form textarea{
         margin-right: 0;
         padding: 10px 0;
     }
-    
+    .project-card video {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 0;
+    }
     .card-title {
         font-size: 22px;
         margin: 10px 0;
@@ -1188,6 +1200,7 @@ form input, form textarea{
     }
     .icons{
         margin-top: 15px;
+        margin-bottom: 15px;
     }
     form input, form textarea{
         margin: 0;
