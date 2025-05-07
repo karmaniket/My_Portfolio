@@ -176,7 +176,7 @@ nav ul li a:hover{
 .bmc-btn img{
     max-width: 100%;
     height: auto;
-    width: 80px;
+    width: 50px;
 }
 .bmc-btn img:hover {
     transition: background 0.3s, transform 0.3s;
@@ -213,7 +213,6 @@ nav ul li a:hover{
 .para {
     font-size: 20px;
     padding-top: 15px;
-    padding-right: 27px;
     text-decoration: none;
     text-align: justify;
     font-family: YAFDfaqxCGc-0;
@@ -927,7 +926,7 @@ form input, form textarea{
     }
 
     .bmc-btn img{
-        width: 50px;
+        width: 30px;
     }
 
     /* ------------------       Res ABOUT ME    ---------------------- */
@@ -1198,7 +1197,7 @@ form input, form textarea{
     /* -----------------------------------    Contact ------------------------------------------ */
 
     .container2{
-        padding: 0px 10% 20px;
+        padding: 0px 10% 10px;
     }
     .left h1{
         display: none;
@@ -1261,6 +1260,14 @@ form input, form textarea{
     }
     .tab-links{
         margin-right: 0;
+    }
+    #msg{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .copyright{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
 
