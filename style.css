@@ -287,7 +287,7 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url(resource/space.jpg);
+    background-image: url(resource/workshop.jpg);
     background-size: cover;
     background-position: center;
     scroll-margin: 70px;
@@ -361,7 +361,7 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url(resource/space.jpg);
+    background-image: url(resource/theory.jpg);
     background-size: cover;
     background-position: center;
     scroll-margin: 70px;
@@ -593,7 +593,7 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url(resource/project_cover.jpg);
+    background-image: url(resource/projects.jpg);
     background-size: cover;
     background-position: center;
     scroll-margin: 70px;
@@ -685,7 +685,7 @@ nav ul li a:hover{
 /* ----------------------------------Contact--------------------------------- */
 
 .container2{
-    padding: 50px 15%;
+    padding: 50px 15% 30px;
 }
 #contact{
     padding-top: 50px;
@@ -777,6 +777,7 @@ form input, form textarea{
 .submit-btn{
     display: inline-block;
     margin: 0 auto;
+    margin-top: 10px;
     width: fit-content;
     padding: 7px 50px;
     border-radius: 7px;
@@ -796,8 +797,8 @@ form input, form textarea{
 }
 #msg{
     color: #E8E8ED;
-    font-size: 17px;
-    margin-top: 15px;
+    font-size: 20px;
+    margin-top: 30px;
     display: block;
 }
 .copyright{
@@ -805,6 +806,7 @@ form input, form textarea{
     text-align: center;
     padding: 15px 0;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 17px;
     color: #C1C1C1;
 }
@@ -913,10 +915,15 @@ form input, form textarea{
         font-size: 30px;
     }
     
-    /* ------------------       bmc res    ---------------------- */
+    /* ------------------       Bmc res    ---------------------- */
 
     .bmc-btn{
         position: absolute;
+
+        bottom: 20px;
+        right: 20px;
+        z-index: 0;
+        display: block;
     }
 
     .bmc-btn img{
@@ -987,7 +994,7 @@ form input, form textarea{
         font-size: 45px;
     }
     #workshop{
-        background-image: url(resource/theory-res.jpg);
+        background-image: url(resource/workshop-res.jpg);
     }
 
     /* ----------------------      Theories    ------------------------ */
@@ -1185,7 +1192,7 @@ form input, form textarea{
         font: bolder;
     }
     #projects{
-        background-image: url(resource/project_res.jpg);
+        background-image: url(resource/projects-res.jpg);
     }
     
     /* -----------------------------------    Contact ------------------------------------------ */
