@@ -164,6 +164,25 @@ nav ul li a:hover{
     transform: translateY(-5px);
 }
 
+/* ----------------------------------- bmc --------------------------------- */
+
+.bmc-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: block;
+}
+.bmc-btn img{
+    max-width: 100%;
+    height: auto;
+    width: 80px;
+}
+.bmc-btn img:hover {
+    transition: background 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+}
+
 /* -----------------------------------ABOUT ME--------------------------------- */
 
 #about{
@@ -194,6 +213,7 @@ nav ul li a:hover{
 .para {
     font-size: 20px;
     padding-top: 15px;
+    padding-right: 27px;
     text-decoration: none;
     text-align: justify;
     font-family: YAFDfaqxCGc-0;
@@ -893,6 +913,16 @@ form input, form textarea{
         font-size: 30px;
     }
     
+    /* ------------------       bmc res    ---------------------- */
+
+    .bmc-btn{
+        position: absolute;
+    }
+
+    .bmc-btn img{
+        width: 50px;
+    }
+
     /* ------------------       Res ABOUT ME    ---------------------- */
 
     #about{
