@@ -1,15 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "SF Pro Display", "Helvetica", sans-serif;
+    font-family: 'D-DIN', sans-serif;
+    /* font-family: "SF Pro Display", "Helvetica", sans-serif; */
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    /* padding-top: 50px; */
-    background-color: #262626;
+    padding-top: 50px;
+    background-color: #000;
 }
 #header{
     width: 100%;
@@ -17,16 +18,7 @@ body{
     background-size: cover;
     background-position: center;
     z-index: 0;
-    background: rgba(0,0,0,0.6);
-}
-.bg-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.mobile-bg{
-    display: none;
+    background: #000;
 }
 
 /* -----------------------------------NAVBAR--------------------------------- */
@@ -34,7 +26,6 @@ body{
 .res-nav{
     display: none;
 }
-
 .container{
     padding: 40px 7%;
 }
@@ -43,108 +34,67 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 7%;
-    background-color: rgba(22, 22, 23, 88);
+    background: linear-gradient(to bottom, #000 50%, #00000048 70%, #00000000 100%);
     display: flex;
-    justify-content: space-between;
     z-index: 100;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 0.3s cubic-bezier(0.4,0,0.2,1);
 }
-.logo{
-    color: #C1C1C1;
-    font-family: "Posterama 1913 W01 Bold";
-    font-size: 30px;
-    font-weight: 500;
-    text-decoration: none;
-    margin: 27px 9%;
-    transition: 0.5s;
+nav.hide-navbar {
+    opacity: 0;
+    pointer-events: none;
 }
-.logo:hover{
+
+/* -----------------------------------HEADER--------------------------------- */
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+.logo {
+    font-size: 125px;
     color: #E8E8ED;
+    font-family: "Michroma", sans-serif;
+    text-decoration: none;
+    letter-spacing: 10px;
+}
+.logo span{
+    font-size: 150px;
+    font-family: "Posterama 1913 W01 Bold";
+    text-decoration: none;
+    letter-spacing: 10px;
+    color: #e8e8edf3;
+    animation: glow-loop 2s infinite alternate;
+}
+@keyframes glow-loop {
+    0% {
+        filter: drop-shadow(0 0 0em rgba(0, 132, 255, 0.0))
+                drop-shadow(0 0 0em rgba(102, 153, 255, 0.0))
+                drop-shadow(0 0 0em rgba(179, 140, 255, 0.0));
+    }
+    100% {
+        color: #E8E8ED;
+        filter: drop-shadow(0em 0em 0.01526281em rgb(109, 216, 255)) 
+            drop-shadow(0em 0em 0.07631406em rgb(111, 149, 255)) 
+            drop-shadow(0em 0em 0.22894219em rgb(145, 91, 255));
+    }
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 35px 30px;
+    margin: 25px 30px;
 }
 nav ul li a{
     color: #E8E8ED;
     text-decoration: none;
     font-size: 22px;
     position: relative;
-    transition: .2s;
-}
-nav ul li a:hover{
-    color: gray;
-}
-
-/* -----------------------------------HEADER--------------------------------- */
-
-.header-text{
-    margin: 20% 25% 0;
-    text-align: center;
-    color: #E8E8ED;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(0, 132, 255, 0.95)) 
-            drop-shadow(0em 0em 0.07631406em rgba(102, 153, 255, 0.75)) 
-            drop-shadow(0em 0em 0.22894219em rgba(179, 140, 255, 0.44));
-}
-.header-text p{
-    font-family: "Posterama 1913 W01 Bold";
-    font-size: 25px;
-}
-.header-text p span{
-    font-family: "Posterama 1913 W01 Bold";
-    transition: 0.5s;
-}
-.header-text p span:hover{
-    color: #E8E8ED;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.header-text h1{
-    font-family: "Posterama 1913 W01 Bold";
-}
-.think h1{
-    font-size: 40px;
-    margin: 10px 0 0;
-}
-.think h1:hover{
-    font-size: 0;
-}
-.think h1:hover::after{
-    content: "THINK.";
-    font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.plan h1{
-    font-size: 40px;
-    margin: 10px 0 0;
-}
-.plan h1:hover{
-    font-size: 0;
-}
-.plan h1:hover::after{
-    content: "PLAN.";
-    font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.execute h1{
-    font-size: 40px;
-    margin: 10px 0 0;
-}
-.execute h1:hover{
-    font-size: 0;
-}
-.execute h1:hover::after{
-    content: "EXECUTE.";
-    font-size: 40px;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    transition: 0.3s;
 }
 .social{
     text-decoration: none;
@@ -154,14 +104,12 @@ nav ul li a:hover{
 .social a{
     color: #E8E8ED;
     font-size: 40px;
-    margin: 15px 10px;
-    transition: background 0.3s, transform 0.3s;
+    margin: 0px 13px;
+    transition: 0.3s;
 }
-.social a:hover{
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-    transform: translateY(-5px);
+nav ul li a:hover,
+.social a:hover {
+    color: #C1C1C1;
 }
 
 /* ----------------------------------- bmc --------------------------------- */
@@ -169,12 +117,12 @@ nav ul li a:hover{
 .bmc-btn{
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 15px;
     z-index: 9999;
     display: block;
 }
 .bmc-btn img{
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     width: 50px;
 }
@@ -189,7 +137,6 @@ nav ul li a:hover{
     padding: 50px 0;
     color: #E8E8ED;
     font-size: 25px;
-    scroll-margin: 70px;
 }
 .row{
     display: flex;
@@ -201,42 +148,42 @@ nav ul li a:hover{
 }
 .about-col-1{
     flex-basis: 30%;
-    margin: 25px;
+    margin: 30px;
+    padding: 20px;
 }
 .about-col-1 img{
     width: 100%;
     border-radius: 50%;
+    opacity: 0.9;
 }
 .about-col-2{
     flex-basis: 60%;
 }
 .para {
-    font-size: 20px;
+    font-size: 19px;
     padding-top: 15px;
     text-decoration: none;
     text-align: justify;
-    font-family: YAFDfaqxCGc-0;
     line-height: 1.19473041em;
 }
 .para span{
-    font-size: 20px;
+    font-size: 19px;
     padding-top: 10px;
     text-decoration: none;
     text-align: justify;
-    font-family: YAFDfaqxCGc-0;
     line-height: 1.19473041em;
     color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
+    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 172, 47, 0.881)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 181, 71, 0.627)) 
             drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
 }
 .tab-titles{
     display: flex;
-    margin: 30px 0 30px;
+    margin: 30px 0 35px;
 }
 .tab-links{
-    margin-right: 20%;
-    font-size: 30px;
+    margin-right: 19%;
+    font-size: 28px;
     cursor: pointer;
     position: relative;
 }
@@ -262,16 +209,13 @@ nav ul li a:hover{
     color: #ffbd59;
     font-size: 20px;
 }
-#skills ul li{
-    color: #ffbd59;
-    font-size: 20px;
-}
-#Interests ul li{
+#Domains ul li{
     color: #ffbd59;
     font-size: 20px;
 }
 .tab-contents{
     display: none;
+    min-height: 350px;
 }
 .tab-contents.active-tab{
     display: block;
@@ -286,10 +230,9 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url(resource/workshop.jpg);
+    background-color: #000;
     background-size: cover;
     background-position: center;
-    scroll-margin: 70px;
 }
 #workshop .hide-workshop{
     display: none;
@@ -301,222 +244,71 @@ nav ul li a:hover{
     margin-top: 50px;
 }
 .workshop-list div{
-    background: #262626;
+    border: 3px solid #262626;
     padding: 5px 20px 0;
     font-size: 15px;
     font-weight: 100;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: background 0.5s, transform 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .workshop-list div i{
     font-size: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    align-self: center;
+    transition: color 0.3s;
 }
 .workshop-list div h2{
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
-.workshop-list div p{
-    font-size: 18px;
-    margin-bottom: 15px;
+.workshop-list div .work-desc{
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 .workshop-list div a{
     text-decoration: none;
-    color: rgba(22, 22, 23, 88);
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 15px;
     display: inline-block;
+    color: #000;
 }
 .workshop-btn{
     display: block;
-    margin: 10px auto;
     width: fit-content;
-    border: 1px solid black;
-    padding: 7px 20px;
-    border-radius: 7px;
     text-decoration: none;
-    background-color: #C1C1C1;
+    border: 1px solid #000;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.301) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255, 255, 255, 0.519) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
 .workshop-list div:hover{
     transform: translateY(-10px);
+    color: #000;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
                 radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    color: rgba(22, 22, 23, 88);
-    /* background-color: #ffbd59; */
-    /* filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000)); */ */
-}
-
-/* -----------------------------------Theories--------------------------------- */
-
-.theory-body{
-    padding: 0;
-}
-#theories{
-    padding: 50px 0 15px;
-    color: #E8E8ED;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background-image: url(resource/theory.jpg);
-    background-size: cover;
-    background-position: center;
-    scroll-margin: 70px;
-}
-#theories h1{
-    font-family: "Posterama 1913 W01 Bold";
-    color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-#theories .hide-theory{
-    display: none;
-}
-.theories-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    margin-top: 50px;
-}
-.theories-list div{
-    background: #262626;
-    padding: 5px 20px 0;
-    font-size: 15px;
-    font-weight: 100;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-.theories-list div i{
-    font-size: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.theories-list div h2{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.theories-list div p{
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.theories-list div a{
-    text-decoration: none;
-    color: rgba(22, 22, 23, 88);
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    display: inline-block;
-}
-.theory-btn{
-    display: block;
-    margin: 10px auto;
-    width: fit-content;
-    border: 1px solid black;
-    padding: 7px 20px;
-    border-radius: 7px;
-    text-decoration: none;
-    background-color: #C1C1C1;
-}
-.theories-list div:hover{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
-                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    transform: translateY(-10px);
-    color: rgba(22, 22, 23, 88);
-    
-    /* background-color: #ffbd59; */
-    /* filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000)); */
-}
-
-/*--------------------------------- electromec.html---------------------------  */
-
-#electromec-con{
-    margin: 15px 0;
-    height: 100%;
-    width: auto;
-}
-#electromec-con .hide-electromec{
-    display: none;
-}
-.electromec-container h1{
-    text-align: center;
-    font-family: "Posterama 1913 W01 Bold";
-    color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.electromec-desc{
-    display: flex;
-    justify-content: center;
-    margin: 50px 10%;
-}
-.em-img img{
-    height: auto;
-    width: 83vh;
-    filter: drop-shadow(0em 0em 0.07631406em rgb(255, 255, 255));
-}
-.em-desc p{
-    font-size: 20px;
-    margin-left: 7%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
-    color: #E8E8ED;
-}
-.em-desc span{
-    color: #ffbd59;
-    font-size: 23px;
-}
-
-/*--------------------------------- blueprints.html---------------------------  */
-
-.blueprints-con{
-    padding: 10px 15%;
-}
-#blueprints{
-    width: 100%;
-    height: auto;
-    scroll-margin: 70px;
-    font-size: 18px;
-    padding-bottom: 30px;
-}
-#blueprints .hide-blueprints{
-    display: none;
-}
-.blueprints-con h1{
-    text-align: center;
-    font-family: "Posterama 1913 W01 Bold";
-    color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.blueprints-card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    margin-top: 50px;
-}
-.blueprints-card img{
-    width: 100%;
-    border-radius: 1px;
-    display: block;
+    /* background: linear-gradient(to bottom, rgba(255,190,0,1) 0%, rgba(255, 136, 0, 0.93) 100%), 
+                radial-gradient(at top center, rgb(255, 179, 16) 0%, rgb(255, 166, 0) 120%) #ffbd59; */
 }
 
 /*--------------------------------- vfx.html---------------------------  */
 
 .vfx-container{
-    padding: 10px 15%;
+    padding: 0 15%;
 }
 #vfx{
     width: 100%;
     height: auto;
-    scroll-margin: 70px;
-    font-size: 18px;
+    font-size: 25px;
     padding-bottom: 30px;
 }
 #vfx .hide-vfx{
@@ -524,60 +316,18 @@ nav ul li a:hover{
 }
 .vfx-container h1{
     text-align: center;
-    font-family: "Posterama 1913 W01 Bold";
-    color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    color: #E8E8ED;
 }
 .vfx-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
+    grid-gap: 70px;
     margin-top: 50px;
 }
 .vfx-grid video{
     width: 100%;
     border-radius: 1px;
     display: block;
-}
-
-/*---------------------------------Theory description.html---------------------------  */
-
-#theory-con{
-    margin: 15px 0;
-    height: auto;
-    width: auto;
-}
-.theory-title h1{
-    text-align: center;
-    font-family: "Posterama 1913 W01 Bold";
-    color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-}
-.picture img{
-    height: auto;
-    width: 60vh;
-    filter: drop-shadow(0em 0em 0.07631406em rgb(255, 255, 255));
-}
-.theory-desc{
-    display: flex;
-    justify-content: center;
-    margin: 50px 10%;
-}
-.description{
-    font-size: 17px;
-    margin-left: 5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: justify;
-    color: #E8E8ED;
-}
-.description span{
-    color: #ffbd59;
 }
 
 /*---------------------------------Projects---------------------------  */
@@ -592,105 +342,81 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     height: auto;
-    background-image: url(resource/projects.jpg);
+    background-color: #000;
     background-size: cover;
     background-position: center;
-    scroll-margin: 70px;
 }
 #projects .hide-projects{
     display: none;
 }
-
 .project-card {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
     margin-top: 50px;
 }
-
 .project-card div {
     display: block;
-    background: #262626;
+    border: 3px solid #262626;
     padding: 20px;
-    font-size: 15px;
-    font-weight: 100;
-    border-radius: 10px;
+    border-radius: 7px;
     transition: background 0.5s, transform 0.5s;
     position: relative;
     text-align: left;
-    min-height: 220px;
-}
-
-.project-card img {
-    width: 35%;
-    border-radius: 5px;
-    float: left;
-    margin-left: 10px;
-    margin-right: 50px;
-}
-.project-card video {
-    width: 35%;
-    border-radius: 5px;
-    float: left;
-    margin-left: 10px;
-    margin-right: 50px;
 }
 .card-title {
-    font-size: 25px;
-    margin: 25px 0 15px;
+    font-size: 35px;
+    margin: 15px 0 15px;
     display: block;
     overflow: hidden;
 }
-
 .project-card div p {
     font-size: 20px;
     margin: 0 15px 50px 0;
     text-align: left;
-    font-family: YAFDfaqxCGc-0;
-    line-height: 1.19473041em;
     overflow: hidden;
 }
-
+.project-card img {
+    width: 35%;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    float: right;
+    margin-left: 10px;
+    opacity: 0.9;
+}
 .project-card div a {
     text-decoration: none;
+    color: #000;
     font-size: 17px;
-    color: rgba(22, 22, 23, 0.88);
     display: block;
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
+    text-align: left;
 }
-
 .project-btn {
     display: block;
     margin: 0 auto;
     width: fit-content;
-    border: 1px solid black;
-    padding: 7px 30px;
-    border-radius: 7px;
     text-decoration: none;
-    background-color: #C1C1C1;
-}
 
-.project-card div:hover {
-    transform: translateY(-10px);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
-                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    color: rgba(22, 22, 23, 88);
+    border: 1px solid #000;
+    padding: 10px 25px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.301) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255, 255, 255, 0.519) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
 
 /* ----------------------------------Contact--------------------------------- */
 
 .container2{
-    padding: 50px 15% 30px;
+    padding: 50px 15% 50px;
 }
 #contact{
     padding-top: 50px;
     color: #E8E8ED;
     font-size: 25px;
     text-align: center;
+    scroll-margin: 30px;
 }
 .left h2{
     display: none;
@@ -706,7 +432,7 @@ nav ul li a:hover{
     flex-basis: 50%;
 }
 .left p{
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .email{
     text-decoration: none;
@@ -714,49 +440,38 @@ nav ul li a:hover{
     margin-right: -10px;
 }
 .email-font{
-    font-size: 20px;
+    font-size: 22px;
 }
 .left p i{
-    color: #C1C1C1;
-    margin-right: 15px;
-    font-size: 20px;
-}
-.left p i:hover{
-    color: #E8E8ED;
+    margin-right: 10px;
+    font-size: 22px;
 }
 .icons{
-    margin-top: 23%;
-    margin-bottom: 25px;
+    margin-top: 8%;
+    margin-bottom: 55px;
 }
 .icons a{
+    margin: 10px;
     text-decoration: none;
     font-size: 30px;
-    padding: 0 7px;
-    color: #C1C1C1;
+    color: #E8E8ED;
     display: inline-block;
 }
 .icons a:hover{
-    color: #E8E8ED;
+    color: #C1C1C1;
 }
 .resume-btn{
     display: inline-block;
     margin: 0 auto;
     width: fit-content;
-    padding: 7px 30px;
-    border-radius: 7px;
     text-decoration: none;
-    color: #262626;
-    font-size: 22px;
-
-    background-color: #ffbd59;
-    transition: 0.3s;
-}
-.resume-btn:hover{
-    color: #262626;
-    background-color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    color: #000;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    border: 2px solid #000;
+    background: linear-gradient(90deg, rgba(255,190,0,1) 100%, rgba(255,137,0,1) 100%);
+    transition: filter 0.3s;
 }
 .right form{
     width: 100%;
@@ -776,23 +491,23 @@ form input, form textarea{
 .submit-btn{
     display: inline-block;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 15px;
     width: fit-content;
-    padding: 7px 50px;
-    border-radius: 7px;
     text-decoration: none;
-    color: #262626;
-    
-    background-color: #ffbd59;
-    transition: 0.3s;
-    font-size: 22px;
     cursor: pointer;
+
+    color: #000;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(255,190,0,1) 100%, rgba(255,137,0,1) 100%);
+    transition: filter 0.3s;
 }
+.resume-btn:hover,
 .submit-btn:hover{
-    background-color: #ffbd59;
-    filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-            drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-            drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
+    filter: drop-shadow(0em 0em 0.01526281em rgb(255, 218, 161)) 
+            drop-shadow(0em 0em 0.07631406em rgba(255, 173, 50, 0.862)) 
+            drop-shadow(0em 0em 0.22894219em rgba(255, 177, 60, 0.641));
 }
 #msg{
     color: #E8E8ED;
@@ -804,7 +519,7 @@ form input, form textarea{
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
     font-size: 17px;
     color: #C1C1C1;
@@ -914,7 +629,7 @@ form input, form textarea{
         font-size: 30px;
     }
     
-    /* ------------------       Bmc res    ---------------------- */
+/* ------------------       Bmc res    ---------------------- */
 
     .bmc-btn{
         position: absolute;
@@ -929,7 +644,7 @@ form input, form textarea{
         width: 30px;
     }
 
-    /* ------------------       Res ABOUT ME    ---------------------- */
+/* ------------------       Res ABOUT ME    ---------------------- */
 
     #about{
         margin-top: 10px;
@@ -971,7 +686,7 @@ form input, form textarea{
         font-size: 17px;
     }
     
-    /* -----------------------       Workshop    ------------------------- */
+/* -----------------------       Workshop    ------------------------- */
 
     .workshop-list div{
         margin: 0 30px;
@@ -996,90 +711,7 @@ form input, form textarea{
         background-image: url(resource/workshop-res.jpg);
     }
 
-    /* ----------------------      Theories    ------------------------ */
-
-    .theories-list div{
-        margin: 0 30px;
-    }
-    #theories h1{
-        display: none;
-    }
-    #theories .hide-theory{
-        display: flex;
-        justify-content: center;
-        font-family: "Posterama 1913 W01 Bold";
-        color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-    }
-    .theories-list div p{
-        font: bolder;
-    }
-    .theories-list div h2{
-        font-size: 23px;
-    }
-    .theories-list div i{
-        font-size: 45px;
-    }
-    #theories{
-        background-image: url(resource/theory-res.jpg);
-    }
-
-    /* ---------------------   blueprints res  ------------------------------- */
-
-    #blueprints h1{
-        display: none;
-    }
-    #blueprints .hide-blueprints{
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
-        font-family: "Posterama 1913 W01 Bold";
-        color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-    }
-
-    /* --------------------     electromec res  ----------------------------------- */
-
-    #electromec-con h1{
-        display: none;
-    }
-    #electromec-con .hide-electromec{
-        display: flex;
-        justify-content: center;
-        font-family: "Posterama 1913 W01 Bold";
-        color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-    }
-    #electromec-con{
-        margin-top: 50px;
-    }
-    .electromec-desc{
-        display: flex;
-        flex-direction: column;
-        margin: 40px 13%;
-    }
-    .em-img img{
-        width: 75vw;
-        height: auto;
-    }
-    .em-desc p{
-        margin: 0;
-        margin-top: 20px;
-    }
-/* .em-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    } */
-
-    /* --------------------------   vfx res ----------------------------------- */
+/* --------------------------   vfx res ----------------------------------- */
 
     #vfx h1{
         display: none;
@@ -1095,34 +727,7 @@ form input, form textarea{
                 drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
     }
 
-/* ---------------------        theory desc res     ----------------------------------- */
-
-    .theory-desc{
-        display: flex;
-        flex-direction: column;
-    }
-    .picture{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-    }
-    .picture img{
-        width: 75vw;
-        height: auto;
-    }
-    .description{
-        margin: 0;
-        margin-top: 50px;
-    }
-    .theory-desc {
-        margin: 30px 10%;
-    }
-    #theory-con{
-        margin-top: 50px;
-    }
-
-    /* ------------------------------------    Projects    ------------------------------------ */
+/* ------------------------------------    Projects    ------------------------------------ */
 
     .container1 {
         padding: 0 5%;
@@ -1194,7 +799,7 @@ form input, form textarea{
         background-image: url(resource/projects-res.jpg);
     }
     
-    /* -----------------------------------    Contact ------------------------------------------ */
+/* -----------------------------------    Contact ------------------------------------------ */
 
     .container2{
         padding: 0px 10% 10px;
