@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +14,14 @@
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resource/icon 1.png">
 </head>
-
 <body>
     <div class="pop-up">
         <nav class="res-nav">
             <a href="#" class="logo">KARMANIKET</a>
-            <img src="./resource/close.png" onclick="closeSideBar()" alt="">
         </nav>
-
         <ul>
             <div class="lower-bar">
-                <li><a href="#home" onclick="closeSideBar()">HOME</a></li>
+                <li><a href="#" onclick="closeSideBar()">HOME</a></li>
                 <li><a href="#projects" onclick="closeSideBar()">PROJECTS</a></li>
                 <li><a href="#workshop" onclick="closeSideBar()">WORKSHOP</a></li>
                 <li><a href="#about" onclick="closeSideBar()">ABOUT</a></li>
@@ -33,7 +29,6 @@
             </div>
         </ul>
     </div>
-
     <div class="final-container">
         <div id="header">
             <div class="container">
@@ -46,12 +41,14 @@
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
-
                 <nav class="res-nav">
                     <a href="#" class="logo">KARMANIKET</a>
-                    <img src="resource/menu.png" onclick="showSideBar()" alt="">
+                    <div class="menu-icon" onclick="toggleSideBar()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
                 </nav>
-
                 <div class="header-logo">
                     <a class="logo">KARM<span>A</span>NIKET</a>
                 </div>
@@ -69,12 +66,11 @@
                 </div>
             </div>
         </div>
-
         <a class="bmc-btn" href="https://buymeacoffee.com/avmades" target="_blank">
             <img src="resource/bmc.png" alt="Buy Me A Coffee">
         </a>
 
-        <!-------------------------------------ABOUT ME----------------------------------->
+        <!-- ------------------------------------------ About ------------------------------------------ -->
 
         <div id="about">
             <div class="container">
@@ -85,7 +81,7 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="subtitle">ABOUT ME</h1>
-                        <p class="para">
+                        <i><p class="para">
                             Myself Vishwakarma Aniket aka <span>Karmaniket</span> and <span>AV mades</span>, I'm
                             passionate about leveraging my skills in a dynamic
                             environment through a data-driven approach. With technical expertise in <span>AI and Machine
@@ -95,7 +91,7 @@
                             Driven by exceptional adaptability, critical thinking, and meticulous attention to detail.
                             <br>
 
-                            I'm a determined individual born in Gorakhpur, Uttar Pradesh. Growing up in a modest
+                            I'm a determined individual born in Gorakhpur, UP. Growing up in a modest
                             background, I faced numerous challenges
                             that shaped my character. My background and experiences have made me who I am: a strong and
                             resilient individual.
@@ -107,11 +103,11 @@
                             understanding the mysteries of the Universe.
                             In addition, I make <span>YouTube</span> videos where I build projects that seamlessly
                             integrate hardware and software.
-                        </p>
+                        </p></i>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('eduaction')">Education</p>
                             <p class="tab-links" onclick="opentab('work-exp')">Work Exp</p>
-                            <p class="tab-links" onclick="opentab('Domains')">Multidisciplinary Skills</p>
+                            <p class="tab-links" onclick="opentab('Domains')">Polymathic</p>
                         </div>
                         <div class="tab-contents active-tab" id="eduaction">
                             <ul>
@@ -139,7 +135,7 @@
                             <ul class="Domains">
                                 <li><span>TECHNICAL SKILLS</span><br>
                                     Machine Learning & Algorithms<br>
-                                    Data Science, Analytics & Data Engineering<br>
+                                    Data Engineering, Analytics & Data Science<br>
                                     Artificial Intelligence, Computer Vision & Robotics
                                 </li>
                                 <li><span>FRONTIERS OF SCIENCE & ENGINEERING</span><br>
@@ -148,7 +144,7 @@
                                     Automobile Engineering & Aeronautics
                                 </li>
                                 <li><span>CREATIVE HOBBIES</span><br>
-                                    3D Design, Prototyping & Printing<br>
+                                    3D Design, Prototyping & 3D Printing<br>
                                     VFX, Cinematography & Content Creation<br>
                                     Sketching, Handcrafting & DIY
                                 </li>
@@ -162,7 +158,7 @@
             </div>
         </div>
 
-        <!-------------------------------------Workshop---------------------------------->
+        <!-- ------------------------------------------ Workshop ------------------------------------------ -->
 
         <div id="workshop">
             <div class="container">
@@ -197,7 +193,7 @@
             </div>
         </div>
 
-        <!-- -----------------------------------Projects--------------------------------- -->
+        <!-- ------------------------------------------ Projects ------------------------------------------ -->
 
         <div id="projects">
             <div class="container1">
@@ -206,7 +202,7 @@
                 <div class="project-card">
                     <div>
                         <img src="resource/projects/gta-control.png" alt="GTA V Control Demo">
-                        <h2 class="card-title">GTA V Hand Gesture Control</h2>
+                        <h2 class="card-title">Hand Gesture Control</h2>
                         <p>
                             Developed a real-time Hand Gesture Recognition and Control System to control games and
                             software with hand gestures.
@@ -273,7 +269,7 @@
                             LOOK</a>
                     </div>
                     <div>
-                        <img src="resource/projects/twowheelsonrent.png" alt="TwoWheelsonRent Demo">
+                        <img src="resource/projects/twowheelsonrent.jpg" alt="TwoWheelsonRent Demo">
                         <h2 class="card-title">TwoWheelsonRent</h2>
                         <p>
                             Initiated the idea of providing users with a seamless and efficient way to rent bicycles,
@@ -287,7 +283,7 @@
             </div>
         </div>
 
-        <!-- -----------------------------------Contact--------------------------------- -->
+        <!-- ------------------------------------------ Contact ------------------------------------------ -->
 
         <div id="contact">
             <div class="container2">
@@ -322,8 +318,10 @@
                     <div class="right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Name" required>
-                            <input type="gmail" name="gmail" placeholder="Email" required>
-                            <textarea name="Message" rows="6" placeholder="Throw your words"></textarea>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" rows="6" placeholder="Throw your words" required></textarea>
+                            <input type="hidden" name="Date" id="submitDate">
+                            <input type="hidden" name="Time" id="submitTime">
                             <button type="submit" class="submit-btn">SUBMIT</button>
                         </form>
                         <span id="msg"></span>
@@ -336,17 +334,20 @@
         </div>
     </div>
 
-    <!-- ----------------------------------- JS --------------------------------- -->
+    <!-- ------------------------------------------ Script ------------------------------------------ -->
 
     <script>
         let lastScrollY = window.scrollY;
-        const navbar = document.querySelector('.desk-nav');
+        const desktopNavbar = document.querySelector('.desk-nav');
+        const mobileNavbar = document.querySelector('.final-container .res-nav');
 
         window.addEventListener('scroll', () => {
             if (window.scrollY > lastScrollY && window.scrollY > 50) {
-                navbar.classList.add('hide-navbar');
+                if (desktopNavbar) desktopNavbar.classList.add('hide-navbar');
+                if (mobileNavbar) mobileNavbar.classList.add('hide-navbar');
             } else {
-                navbar.classList.remove('hide-navbar');
+                if (desktopNavbar) desktopNavbar.classList.remove('hide-navbar');
+                if (mobileNavbar) mobileNavbar.classList.remove('hide-navbar');
             }
             lastScrollY = window.scrollY;
         });
@@ -367,35 +368,51 @@
         }
         const mobileBar = document.querySelector('.pop-up');
         const allContent = document.querySelector('.final-container');
-
-        function showSideBar() {
-            allContent.style.display = 'none';
-            mobileBar.style.display = "block"
+        function toggleSideBar() {
+            const mobileBar = document.querySelector('.pop-up');
+            const body = document.body;
+            const menuIcon = document.querySelector('.menu-icon');
+            mobileBar.classList.toggle('active');
+            body.classList.toggle('menu-active');
+            menuIcon.classList.toggle('active');
         }
         function closeSideBar() {
-            allContent.style.display = 'block';
-            mobileBar.style.display = "none"
+            const mobileBar = document.querySelector('.pop-up');
+            const body = document.body;
+            const menuIcon = document.querySelector('.menu-icon');
+            mobileBar.classList.remove('active');
+            body.classList.remove('menu-active');
+            menuIcon.classList.remove('active');
         }
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjZcPmev5PkrwxWxmyJPYGitFD03726roDwY-rif-iPvoHufZfEaTDfhjcnAtXTkmtVw/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwISyHKK9d4qaAhPENts88I9Z9-CjUbbf9k8t53NLCJ7UOLnnViUUCjagOQUyUAppSaCA/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-
         form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Your message has been sent successfully!!"
+        e.preventDefault()
+        const now = new Date()
+        const date = now.toLocaleDateString()
+        const time = now.toTimeString().slice(0, 8)
+        document.getElementById('submitDate').value = now.toLocaleDateString()
+        document.getElementById('submitTime').value = now.toLocaleTimeString()
+        msg.innerHTML = "Sending..."
+        msg.classList.add('show')
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Your message has been sent successfully!!"
+                msg.classList.add('show')
+                setTimeout(function () {
+                    msg.classList.remove('show')
                     setTimeout(function () {
                         msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
+                    }, 300)
+                }, 3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
         })
     </script>
 </body>
-
 </html>

@@ -8,6 +8,17 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.301) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255, 255, 255, 0.519) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    border-radius: 1px;
+}
 body{
     padding-top: 50px;
     background-color: #000;
@@ -21,7 +32,7 @@ body{
     background: #000;
 }
 
-/* -----------------------------------NAVBAR--------------------------------- */
+/* ------------------------------------------ Navbar ------------------------------------------ */
 
 .res-nav{
     display: none;
@@ -47,7 +58,7 @@ nav.hide-navbar {
     pointer-events: none;
 }
 
-/* -----------------------------------HEADER--------------------------------- */
+/* ------------------------------------------ Header ------------------------------------------ */
 
 .header-logo {
     display: flex;
@@ -111,27 +122,23 @@ nav ul li a:hover,
 .social a:hover {
     color: #C1C1C1;
 }
-
-/* ----------------------------------- bmc --------------------------------- */
-
 .bmc-btn{
     position: fixed;
-    bottom: 20px;
-    right: 15px;
+    bottom: 10px;
+    right: 10px;
     z-index: 9999;
     display: block;
 }
 .bmc-btn img{
-    max-width: 80%;
     height: auto;
-    width: 50px;
+    width: 30px;
 }
 .bmc-btn img:hover {
     transition: background 0.3s, transform 0.3s;
     transform: translateY(-10px);
 }
 
-/* -----------------------------------ABOUT ME--------------------------------- */
+/* ------------------------------------------ About ------------------------------------------ */
 
 #about{
     padding: 50px 0;
@@ -182,7 +189,7 @@ nav ul li a:hover,
     margin: 30px 0 35px;
 }
 .tab-links{
-    margin-right: 13%;
+    margin-right: 140px;
     font-size: 27px;
     cursor: pointer;
     position: relative;
@@ -214,13 +221,13 @@ nav ul li a:hover,
 }
 .tab-contents{
     display: none;
-    min-height: 350px;
+    min-height: 400px;
 }
 .tab-contents.active-tab{
     display: block;
 }
 
-/* -----------------------------------Workshop--------------------------------- */
+/* ------------------------------------------ Workshop ------------------------------------------ */
 
 #workshop{
     padding: 50px 0px;
@@ -266,7 +273,6 @@ nav ul li a:hover,
 }
 .workshop-list div h2{
     font-size: 30px;
-    margin-bottom: 15px;
 }
 .workshop-list div .work-desc{
     font-size: 20px;
@@ -299,7 +305,7 @@ nav ul li a:hover,
                 radial-gradient(at top center, rgb(255, 179, 16) 0%, rgb(255, 166, 0) 120%) #ffbd59; */
 }
 
-/*--------------------------------- vfx.html---------------------------  */
+/* ------------------------------------------ VFX ------------------------------------------ */
 
 .vfx-container{
     padding: 0 15%;
@@ -329,7 +335,7 @@ nav ul li a:hover,
     display: block;
 }
 
-/*---------------------------------Projects---------------------------  */
+/* ------------------------------------------ Projects ------------------------------------------ */
 
 .container1{
     padding: 40px 13%;
@@ -405,38 +411,34 @@ nav ul li a:hover,
                 radial-gradient(at top center, rgba(255, 255, 255, 0.519) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
 
-/* ----------------------------------Contact--------------------------------- */
+/* ------------------------------------------ Contact ------------------------------------------ */
 
 .container2{
-    padding: 50px 15% 50px;
+    padding: 50px 17% 50px;
 }
 #contact{
     padding-top: 50px;
     color: #E8E8ED;
     font-size: 25px;
     text-align: center;
-    scroll-margin: 30px;
+    scroll-margin: 10px;
 }
 .left h2{
     display: none;
 }
 .subtitle-contact{
-    margin-top: 15px;
+    margin-top: 13px;
+    margin-bottom: 40px;
 }
 .left{
-    flex-basis: 50%;
-    padding-left: 10%;
+    flex-basis: 40%;
 }
 .right{
-    flex-basis: 50%;
-}
-.left p{
-    margin-top: 40px;
+    flex-basis: 60%;
 }
 .email{
     text-decoration: none;
-    color: #E8E8ED;
-    margin-right: -10px;
+    color: #C1C1C1;
 }
 .email-font{
     font-size: 22px;
@@ -446,18 +448,15 @@ nav ul li a:hover,
     font-size: 22px;
 }
 .icons{
-    margin-top: 8%;
-    margin-bottom: 55px;
+    margin-top: 15%;
+    margin-bottom: 56px;
 }
 .icons a{
     margin: 10px;
     text-decoration: none;
     font-size: 30px;
-    color: #E8E8ED;
-    display: inline-block;
-}
-.icons a:hover{
     color: #C1C1C1;
+    display: inline-block;
 }
 .resume-btn{
     display: inline-block;
@@ -476,7 +475,7 @@ nav ul li a:hover,
     width: 100%;
 }
 form input, form textarea{
-    width: 100%;
+    width: 90%;
     border: 0;
     outline: none;
     background: rgba(22, 22, 23, 88);
@@ -508,11 +507,19 @@ form input, form textarea{
             drop-shadow(0em 0em 0.07631406em rgba(255, 173, 50, 0.862)) 
             drop-shadow(0em 0em 0.22894219em rgba(255, 177, 60, 0.641));
 }
-#msg{
+#msg {
     color: #E8E8ED;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 30px;
     display: block;
+    min-height: 30px;
+    text-align: center;
+    line-height: 1.2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#msg.show {
+    opacity: 1;
 }
 .copyright{
     width: 100%;
@@ -524,379 +531,359 @@ form input, form textarea{
     color: #C1C1C1;
 }
 
-/*----------------------------------------------------- Responsive ------------------------------------------------*/
+/*----------------------------------------------------- RESPONSIVE ------------------------------------------------*/
 
-@media (min-aspect-ratio: 16/9){
-    .bg-video{
-        width: 100%;
-        height: auto;
-    }
+@media screen and (max-width: 768px){
+
+.res-nav {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
 }
-@media (max-aspect-ratio: 16/9){
-    .bg-video{
-        width: auto;
-        height: 100%;
-    }
+.res-nav.hide-navbar {
+    transform: translateY(-100%);
 }
-
-/*---------------------      Res Navbar      ---------------------*/
-
-@media screen and (max-width: 767px){
-
-    .desk-nav{
-        display: none;
-    }
-    .bg-video {
-        display: none;
-    }
-    #header{
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        z-index: 0;
-        background: rgba(0,0,0,0.6);
-    }
-    .mobile-bg{
-        display: flex;
-        height: 100vh;
-        width: auto;
-        color: azure;
-
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-    body{
-        padding-top: 0;
-    }
-    .container {
-        padding: 0;
-    }
-    .res-nav{
-        display: flex;
-        align-items: center;
-        height: 80px;
-    }
-    .res-nav img{
-        height: 30px;
-    }
-    .logo{
-        margin: 0;
-        font-size: 27px;
-    }
-    .header-text{
-        position: absolute;
-        margin: 0;
-        top: 50%;
-        left: 50%;
-        right: -40%;
-        transform: translate(-50%, -50%);
-    }
-    .header-text p  {
-        font-size: 25px;
-        margin-bottom: 0 50px 13px;
-    }
-    .header-text h1{
-        font-size: 27px;
-    }
-    .think h1:hover::after, .plan h1:hover::after, .execute h1:hover::after{
-        font-size: 27px;
-    }
-    .think h1{
-        margin: 7px 0;
-        padding: 0;
-    }
-    .plan h1{
-        margin: 7px 0;
-        padding: 0;
-    }
-    .execute h1{
-        margin: 7px 0;
-        padding: 0;
-    }
-    .social{
-        position: absolute;
-        top: 60%;
-        left: 20%;
-        right: 19%;
-        margin: 0;
-    }
-    .social a{
-        margin-top: 30px;
-        font-size: 30px;
-    }
-    
-/* ------------------       Bmc res    ---------------------- */
-
-    .bmc-btn{
-        position: absolute;
-
-        bottom: 20px;
-        right: 20px;
-        z-index: 0;
-        display: block;
-    }
-
-    .bmc-btn img{
-        width: 30px;
-    }
-
-/* ------------------       Res ABOUT ME    ---------------------- */
-
-    #about{
-        margin-top: 10px;
-        padding-bottom: 0px;
-    }
-    .tab-links{
-        font-size: 20px;
-    }
-    .about-col-1{
-        flex-basis: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .about-col-2{
-        flex-basis: 0;
-        padding: 30px;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .about-col-1 img{
-        height: 33vh;
-        width: auto;
-    }
-    .res-about{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .about-col-2 .subtitle{
-        display: none;
-    }
-    .para{
-        font-size: 19px;
-    }
-    .tab-contents ul li{
-        font-size: 17px;
-    }
-    
-/* -----------------------       Workshop    ------------------------- */
-
-    .workshop-list div{
-        margin: 0 30px;
-    }
-    #workshop h1{
-        display: none;
-    }
-    #workshop .hide-workshop{
-        display: flex;
-        justify-content: center;
-    }
-    .workshop-list div p{
-        font: bolder;
-    }
-    .workshop-list div h2{
-        font-size: 23px;
-    }
-    .workshop-list div i{
-        font-size: 45px;
-    }
-    #workshop{
-        background-image: url(resource/workshop-res.jpg);
-    }
-
-/* --------------------------   vfx res ----------------------------------- */
-
-    #vfx h1{
-        display: none;
-    }
-    #vfx .hide-vfx{
-        padding-top: 40px;
-        display: flex;
-        justify-content: center;
-        font-family: "Posterama 1913 W01 Bold";
-        color: #ffbd59;
-        filter: drop-shadow(0em 0em 0.01526281em rgba(255, 164, 26, 0.950000)) 
-                drop-shadow(0em 0em 0.07631406em rgba(255, 182, 71, 0.750000)) 
-                drop-shadow(0em 0em 0.22894219em rgba(255, 182, 71, 0.440000));
-    }
-
-/* ------------------------------------    Projects    ------------------------------------ */
-
-    .container1 {
-        padding: 0 5%;
-    }
-    
-    .project-card {
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
-    
-    .project-card div {
-        padding: 5px 15px 60px;
-    }
-    
-    .project-card img {
-        width: 100%;
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px 0;
-    }
-    .project-card video {
-        width: 100%;
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px 0;
-    }
-    .card-title {
-        font-size: 22px;
-        margin: 10px 0;
-        text-align: center;
-    }
-    
-    .project-card div p {
-        font-size: 18px;
-        margin: 0 0 30px;
-        clear: both;
-    }
-    
-    .project-card div a {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 15px;
-    }
-    
-    .project-btn {
-        padding: 6px 25px;
-        font-size: 16px;
-    }
-
-    .container1 {
-    padding: 0px 13%;
-    }
-    #projects h1{
-        display: none;
-    }
-    #projects .hide-projects{
-        display: flex;
-        justify-content: center;
-    }
-    .card-title{
-        font-size: 23px;
-    }
-    .project-card div p{
-        font: bolder;
-    }
-    #projects{
-        background-image: url(resource/projects-res.jpg);
-    }
-    
-/* -----------------------------------    Contact ------------------------------------------ */
-
-    .container2{
-        padding: 0px 10% 10px;
-    }
-    .left h1{
-        display: none;
-    }
-    .left h2{
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-    }
-    .left p{
-        margin-top: -20px;
-    }
-    .email{
-        margin-right: -10px;
-    }
-    .email-font{
-        padding-top: 40px;
-    }
-    .icons a{
-        font-size: 25px;
-        padding: 0 7px;
-    }
-    #contact .left{
-        padding: 0;
-    }
-    #contact .right{
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .right button{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .icons{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    form input, form textarea{
-        margin: 0;
-        margin-top: 10px;
-    }
-    .submit-btn{
-        margin-top: 13px;
-        margin-bottom: 20px;
-    }
-    .resume-btn{
-        margin-top: 7px;
-        font-size: 20px;
-    }
-    .subtitle-contact {
-        margin-top: 0px;
-    }
-    .tab-titles{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .tab-links{
-        margin-right: 0;
-    }
-    #msg{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-    .copyright{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+.desk-nav{
+    display: none;
+}
+body{
+    padding-top: 0;
+}
+.container {
+    padding: 40px 0px;
+}
+.res-nav{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.res-nav img{
+    height: 30px;
+}
+.res-nav .logo{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.header-logo{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.header-logo .logo{
+    font-size: 0px;
+    letter-spacing: 0px;
+}
+.header-logo span{
+    font-size: 250px;
+    letter-spacing: 0px;
+}
+.social a{
+    margin: 5px;
+    font-size: 30px;
+}
+.bmc-btn{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    display: block;
+}
+.bmc-btn img{
+    width: 20px;
 }
 
-/* ----------------------------Responsive Menu------------------------- */
+/* ------------------------------------------ Res About ------------------------------------------ */
 
-.pop-up ul, .lower-bar{
-    height: 100vh;
-    text-decoration: none;
-    list-style-type: none;
+.about-col-1{
+    flex-basis: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.lower-bar{
+.about-col-2{
+    flex-basis: 0;
+    padding: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.about-col-1 img{
+    height: 33vh;
+    width: auto;
+}
+.res-about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.about-col-2 .subtitle{
+    display: none;
+}
+.para{
+    font-size: 19px;
+}
+.tab-contents ul li{
+    font-size: 17px;
+}
+.tab-links{
+    margin-right: 0;
+    font-size: 20px;
+}
+.tab-titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------------ Res Workshop ------------------------------------------ */
+
+#workshop {
+    padding: 50px 10%;
+}
+.workshop-list{
+    grid-gap: 30px;
+}
+.workshop-list div{
+    margin: 10px 0px;
+    padding: 0px;
+    border: 2px solid #262626;
+}
+#workshop h1{
+    display: none;
+}
+#workshop .hide-workshop{
+    display: flex;
+    justify-content: center;
+}
+.workshop-list div h2{
+    font-size: 23px;
+    margin: 0;
+}
+.workshop-list div i{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.workshop-list div p{
+    font-size: 20px;
+}
+.workshop-list div a{
+    margin-top: 0;
+}
+
+/* ------------------------------------------ Res VFX ------------------------------------------ */
+
+#vfx h1{
+    display: none;
+}
+#vfx .hide-vfx{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: #E8E8ED;
+}
+
+/* ------------------------------------------ Res Projects ------------------------------------------ */
+
+.container1 {
+    padding: 40px 10%;
+}
+.project-card {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+.project-card div {
+    padding: 15px 15px 60px;
+    border: 2px solid #262626;
+}
+.project-card img {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+.card-title {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px 0 20px;
+}
+.project-card div p {
+    font-size: 18px;
+    margin: 0 0 25px;
+    clear: both;
+}
+.project-card div a {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+.project-btn {
+    padding: 6px 25px;
+    font-size: 16px;
+}
+#projects h1{
+    display: none;
+}
+#projects .hide-projects{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------ Res Contact ------------------------------------------ */
+
+.container2{
+    padding: 40px 10px 10px;
+}
+.left h1{
+    display: none;
+}
+.left h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px 0;
+}
+.left p i{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.icons a{
+    font-size: 25px;
+    padding: 0 5px;
+}
+#contact .left{
+    padding: 0;
+}
+#contact .right{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.right button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.icons{
+    margin: 10px 0;
+}
+form input, form textarea{
+    margin: 0;
+    margin-top: 10px;
+}
+.submit-btn{
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.resume-btn{
+    margin-top: 7px;
+    font-size: 20px;
+}
+.subtitle-contact {
+    margin-top: 0px;
+}
+#msg{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.copyright{
+    margin: 10px 0;
+}
+}
+
+/* ------------------------------------------ Res Menu ------------------------------------------ */
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+    transition: left 0.2s ease;
+}
+.pop-up.active {
+    left: 0;
+}
+.pop-up .res-nav {
+    display: none;
+}
+.pop-up ul, .lower-bar {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lower-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.lower-bar li {
+    margin: 20px 0;
 }
 .lower-bar li a {
     text-decoration: none;
     font-size: 27px;
     color: #E8E8ED;
 }
-.lower-bar li{
-    margin: 30px 0;
-    text-align: start;
+.menu-icon {
+    transition: transform 0.3s ease;
 }
-.pop-up{
-    display: none;
+.menu-icon.active {
+    transform: rotate(45deg);
 }
+body.menu-active {
+    overflow: hidden;
+}
+.menu-icon {
+    width: 40px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+}
+.menu-icon .line {
+    width: 100%;
+    height: 3px;
+    background-color: #E8E8ED;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.menu-icon.active .line:nth-child(1) {
+    transform: translateY(6.5px) rotate(-15deg);
+}
+.menu-icon.active .line:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active .line:nth-child(3) {
+    transform: translateY(-4.5px) rotate(-75deg);
+}
+.lower-bar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.2s ease;
+}
+.pop-up.active .lower-bar {
+    opacity: 1;
+    transform: translateY(0);
+}
+.lower-bar li {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.3s ease;
+}
+.pop-up.active .lower-bar li:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateX(0); }
+.pop-up.active .lower-bar li:nth-child(2) { transition-delay: 0.15s; opacity: 1; transform: translateX(0); }
+.pop-up.active .lower-bar li:nth-child(3) { transition-delay: 0.2s; opacity: 1; transform: translateX(0); }
+.pop-up.active .lower-bar li:nth-child(4) { transition-delay: 0.25s; opacity: 1; transform: translateX(0); }
+.pop-up.active .lower-bar li:nth-child(5) { transition-delay: 0.3s; opacity: 1; transform: translateX(0); }
+
+/* ------------------------------------------  ------------------------------------------ */
+
