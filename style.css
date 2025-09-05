@@ -45,7 +45,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #000 50%, #00000048 70%, #00000000 100%);
+    background: linear-gradient(to bottom, #000 55%, #00000065 80%, #00000000 100%);
     display: flex;
     z-index: 100;
     justify-content: center;
@@ -189,7 +189,6 @@ nav ul li a:hover,
 .tab-links{
     margin-right: 100px;
     font-size: 27px;
-    cursor: pointer;
     position: relative;
 }
 .tab-links::after{
@@ -489,8 +488,6 @@ form input, form textarea{
     margin-top: 15px;
     width: fit-content;
     text-decoration: none;
-    cursor: pointer;
-
     color: #000;
     font-size: 20px;
     padding: 10px 50px;
@@ -503,6 +500,11 @@ form input, form textarea{
     filter: drop-shadow(0em 0em 0.01526281em rgb(255, 218, 161)) 
             drop-shadow(0em 0em 0.07631406em rgba(255, 173, 50, 0.862)) 
             drop-shadow(0em 0em 0.22894219em rgba(255, 177, 60, 0.641));
+}
+.resume-btn:focus,
+.resume-btn:active {
+  outline: none;
+  box-shadow: none;
 }
 #msg {
     color: #E8E8ED;
@@ -535,6 +537,7 @@ form input, form textarea{
 .res-nav {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1001;
+    background: linear-gradient(to bottom, #000 60%, #00000067 80%, #00000000 100%);
 }
 .res-nav.hide-navbar {
     transform: translateY(-100%);
@@ -562,6 +565,10 @@ body{
     margin: 0;
     font-size: 20px;
     letter-spacing: 5px;
+}
+.res-nav .logo,
+.res-nav a {
+  -webkit-tap-highlight-color: transparent;
 }
 .header-logo{
     margin-top: 13vh;
@@ -831,9 +838,6 @@ form input, form textarea{
     font-size: 27px;
     color: #E8E8ED;
 }
-.menu-icon {
-    transition: transform 0.3s ease;
-}
 .menu-icon.active {
     transform: rotate(45deg);
 }
@@ -846,15 +850,15 @@ body.menu-active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     padding: 5px;
+    transition: transform 0.2s ease;
 }
 .menu-icon .line {
     width: 100%;
     height: 3px;
     background-color: #E8E8ED;
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 .menu-icon.active .line:nth-child(1) {
     transform: translateY(6.5px) rotate(-15deg);
