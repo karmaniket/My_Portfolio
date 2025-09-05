@@ -126,7 +126,6 @@ nav ul li a:hover,
     position: fixed;
     bottom: 10px;
     right: 10px;
-    z-index: 9999;
     display: block;
 }
 .bmc-btn img{
@@ -148,7 +147,6 @@ nav ul li a:hover,
 .row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .res-about{
     display: none;
@@ -189,7 +187,7 @@ nav ul li a:hover,
     margin: 30px 0 35px;
 }
 .tab-links{
-    margin-right: 140px;
+    margin-right: 100px;
     font-size: 27px;
     cursor: pointer;
     position: relative;
@@ -448,8 +446,7 @@ nav ul li a:hover,
     font-size: 22px;
 }
 .icons{
-    margin-top: 15%;
-    margin-bottom: 56px;
+    margin: 50px 0;
 }
 .icons a{
     margin: 10px;
@@ -460,7 +457,7 @@ nav ul li a:hover,
 }
 .resume-btn{
     display: inline-block;
-    margin: 0 auto;
+    margin-top: 15px;
     width: fit-content;
     text-decoration: none;
     color: #000;
@@ -567,8 +564,8 @@ body{
     letter-spacing: 5px;
 }
 .header-logo{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 13vh;
+    margin-bottom: 13vh;
 }
 .header-logo .logo{
     font-size: 0px;
@@ -795,18 +792,21 @@ form input, form textarea{
 /* ------------------------------------------ Res Menu ------------------------------------------ */
 
 .pop-up {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(3px);
-    z-index: 1000;
-    transition: left 0.2s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.5s ease;
 }
 .pop-up.active {
-    left: 0;
+  transform: translateX(0);
+  opacity: 1;
 }
 .pop-up .res-nav {
     display: none;
@@ -824,7 +824,7 @@ form input, form textarea{
     flex-direction: column;
 }
 .lower-bar li {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .lower-bar li a {
     text-decoration: none;
@@ -886,4 +886,3 @@ body.menu-active {
 .pop-up.active .lower-bar li:nth-child(5) { transition-delay: 0.3s; opacity: 1; transform: translateX(0); }
 
 /* ------------------------------------------  ------------------------------------------ */
-
