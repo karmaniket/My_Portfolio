@@ -126,8 +126,11 @@
                             <ul>
                                 <li><span>JULY 2024 - DEC 2024</span><br>ASSOCIATE - Wipro, Navi Mumbai
                                 </li><br><br>
-                                <li><span>CERTIFICATIONS</span><br>17th Aavishkar Research Convention, 2023 <br>
-                                    Google Analytics Certification, 2023 
+                                <li><span>CERTIFICATIONS</span><br>Google Analytics Certification, 2023 <br>
+                                    17th Aavishkar Research Convention, 2022-23 <br>
+                                    Fetching... <br>
+                                    Fetching... <br>
+                                    Fetching... <br>
                                 </li>
                             </ul>
                         </div>
@@ -413,16 +416,18 @@
     <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 0,
-          behavior: "smooth"
-        });
-      }
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+            const isTablet = window.innerWidth >= 769 && window.innerWidth <= 1024;
+            const offset = isTablet ? 50 : 0;
+            window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: "smooth"
+            });
+        }
     });
-  });
+});
 </script>
 </body>
 </html>
