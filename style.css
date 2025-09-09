@@ -20,7 +20,6 @@ html{
     border-radius: 1px;
 }
 body{
-    padding-top: 50px;
     background-color: #000;
 }
 #header{
@@ -64,7 +63,7 @@ nav.hide-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 25vh;
     margin-bottom: 20vh;
 }
 .logo {
@@ -718,9 +717,6 @@ body{
     transform: translateX(-50%);
     bottom: 15px;
 }
-.project-btn {
-    padding: 6px 25px;
-}
 #projects h1{
     display: none;
 }
@@ -881,3 +877,4 @@ body.menu-active {
 .pop-up.active .lower-bar li:nth-child(5) { transition-delay: 0.25s; opacity: 1; transform: translateX(0); }
 
 /* ------------------------------------------  ------------------------------------------ */
+
