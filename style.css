@@ -46,7 +46,6 @@ nav{
     width: 100%;
     background: linear-gradient(to bottom, #000 55%, #00000065 80%, #00000000 100%);
     display: flex;
-    z-index: 100;
     justify-content: center;
     align-items: center;
     z-index: 100;

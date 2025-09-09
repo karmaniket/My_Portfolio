@@ -2,10 +2,6 @@
 <html lang="en">
 <head>
     <title>Karmaniket</title>
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -371,19 +367,14 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
         const mobileBar = document.querySelector('.pop-up');
-        const allContent = document.querySelector('.final-container');
+        const body = document.body;
+        const menuIcon = document.querySelector('.menu-icon');
         function toggleSideBar() {
-            const mobileBar = document.querySelector('.pop-up');
-            const body = document.body;
-            const menuIcon = document.querySelector('.menu-icon');
             mobileBar.classList.toggle('active');
             body.classList.toggle('menu-active');
             menuIcon.classList.toggle('active');
         }
         function closeSideBar() {
-            const mobileBar = document.querySelector('.pop-up');
-            const body = document.body;
-            const menuIcon = document.querySelector('.menu-icon');
             mobileBar.classList.remove('active');
             body.classList.remove('menu-active');
             menuIcon.classList.remove('active');
