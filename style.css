@@ -431,6 +431,8 @@ nav ul li a:hover,
 .email{
     text-decoration: none;
     color: #C1C1C1;
+    display: inline-block;
+    width: auto;
 }
 .email-font{
     font-size: 22px;
@@ -1000,12 +1002,6 @@ body.menu-active {
 
     .container2{
     padding: 40px 5% 7px;
-    }
-    .email {
-        text-decoration: none;
-        color: #C1C1C1;
-        display: inline-block;
-        width: auto;
     }
     .email-font{
         font-size: 35px;
