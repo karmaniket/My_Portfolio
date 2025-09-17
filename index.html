@@ -341,7 +341,6 @@
         let lastScrollY = window.scrollY;
         const desktopNavbar = document.querySelector('.desk-nav');
         const mobileNavbar = document.querySelector('.final-container .res-nav');
-
         window.addEventListener('scroll', () => {
             if (window.scrollY > lastScrollY && window.scrollY > 50) {
                 if (desktopNavbar) desktopNavbar.classList.add('hide-navbar');
