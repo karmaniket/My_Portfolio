@@ -1016,3 +1016,28 @@ body.menu-active {
     font-size: 13px;
     }
 }
+
+@media screen and (max-width: 1366px) and (min-width: 1025px) {
+    /* html {
+        zoom: 0.9;
+    } */
+    .header-logo{
+        margin-top: 27vh;
+        margin-bottom: 23vh;
+    }
+    .header-logo .logo{
+        font-size: 110px;
+    }
+    .header-logo span{
+        font-size: 135px;
+    }
+    .social a{
+    font-size: 40px;
+    }
+    .bmc-btn{
+    position: absolute;
+    }
+    .bmc-btn img{
+    width: 30px;
+    }
+}
