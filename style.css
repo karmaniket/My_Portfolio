@@ -420,7 +420,7 @@ nav ul li a:hover,
 }
 .subtitle-contact{
     margin-top: 13px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .left{
     flex-basis: 40%;
@@ -433,16 +433,16 @@ nav ul li a:hover,
     color: #C1C1C1;
     display: inline-block;
     width: auto;
+    margin: 15px 0;
 }
 .email-font{
-    font-size: 22px;
+    font-size: 21px;
 }
 .left p i{
-    margin-right: 10px;
-    font-size: 22px;
+    font-size: 21px;
 }
 .icons{
-    margin: 50px 0;
+    margin: 46px 0;
 }
 .icons a{
     margin: 10px;
@@ -469,7 +469,7 @@ nav ul li a:hover,
 }
 form input, form textarea{
     width: 90%;
-    border: 0;
+    border: 2px solid transparent;
     outline: none;
     background: rgba(22, 22, 23, 88);
     padding: 15px;
@@ -478,6 +478,10 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
     resize: none;
+}
+form input:focus, form textarea:focus {
+    border: 2px solid #C1C1C1;
+    outline: none;
 }
 .submit-btn{
     display: inline-block;
