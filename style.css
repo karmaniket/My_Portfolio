@@ -72,18 +72,18 @@ nav.hide-navbar {
     text-decoration: none;
     letter-spacing: 10px;
 }
-@font-face {
+/* @font-face {
     font-family: "Posterama 2001 w04 Bold";
     src: url("/assets/posterama-2001-w04-bold.woff2") format("woff2"),
          url("/assets/posterama-2001-w04-bold.ttf") format("truetype");
 
     /* This specific font uses Posterama 2001 W04 Bold, designed by Jim Ford and Karl Leuthold.
     © Monotype Imaging Inc.
-    The font is used solely for personal, non-commercial portfolio purposes. */
-}
+    The font is used solely for personal, non-commercial portfolio purposes.
+} */
 .logo span{
     font-size: 150px;
-    font-family: "Posterama 2001 w04 Bold", sans-serif;
+    font-family: "Posterama 1913 W01 Bold", sans-serif;
     text-decoration: none;
     letter-spacing: 10px;
     color: #e8e8edf3;
