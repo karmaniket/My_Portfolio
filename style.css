@@ -1031,9 +1031,6 @@ body.menu-active {
 }
 
 @media screen and (max-width: 1366px) and (min-width: 1025px) {
-    /* html {
-        zoom: 0.9;
-    } */
     .header-logo{
         margin-top: 27vh;
         margin-bottom: 23vh;
@@ -1053,4 +1050,10 @@ body.menu-active {
     .bmc-btn img{
     width: 30px;
     }
+}
+
+#stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
 }
