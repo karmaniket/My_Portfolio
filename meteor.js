@@ -37,7 +37,7 @@
         const baseAngle = Math.PI * 0.2;
         const spread = Math.PI * 0.05;
         const angle = baseAngle + (Math.random() - 1) * spread;
-        const speed = isMobile ? 6 + Math.random() * 2 : 3 + Math.random() * 2;
+        const speed = isMobile ? 4 + Math.random() * 2 : 3 + Math.random() * 2;
         const LifeMin = isMobile ? 40 : 100;
         const LifeRange = isMobile ? 40 : 100;
         const SizeMin = isMobile ? 0.5 : 0.7;

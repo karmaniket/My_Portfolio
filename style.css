@@ -613,6 +613,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 30px 0;
 }
 .about-col-2{
     flex-basis: 0;
@@ -623,7 +624,7 @@ body{
     flex-direction: column;
 }
 .about-col-1 img{
-    height: 30vh;
+    height: 27vh;
     width: auto;
 }
 .res-about{
@@ -636,7 +637,7 @@ body{
 }
 .para,
 .para span{
-    font-size: 18px;
+    font-size: 17px;
     padding-top: 0;
 }
 .tab-contents ul li{
