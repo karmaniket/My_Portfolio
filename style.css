@@ -411,6 +411,14 @@ nav ul li a:hover,
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.301) 0%, rgba(0,0,0,0.15) 100%), 
                 radial-gradient(at top center, rgba(255, 255, 255, 0.519) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
+.project-card div:hover{
+    transform: translateY(-10px);
+    color: #000;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    /* background: linear-gradient(to bottom, rgba(255,190,0,1) 0%, rgba(255, 136, 0, 0.93) 100%), 
+                radial-gradient(at top center, rgb(255, 179, 16) 0%, rgb(255, 166, 0) 120%) #ffbd59; */
+}
 
 /* ------------------------------------------ Contact ------------------------------------------ */
 
@@ -544,6 +552,10 @@ form input:focus, form textarea:focus {
 
 @media screen and (max-width: 768px){
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 .res-nav {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1001;
@@ -855,6 +867,11 @@ form input, form textarea{
 }
 body.menu-active {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .menu-icon {
     width: 40px;
@@ -898,6 +915,10 @@ body.menu-active {
 /* ------------------------------------------  ------------------------------------------ */
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+    html, body {
+    overflow-x: hidden;
+    width: 100%;
+    }
     nav ul li a{
         font-size: 27px;
     }
@@ -1032,6 +1053,10 @@ body.menu-active {
 }
 
 @media screen and (max-width: 1366px) and (min-width: 1025px) {
+    html, body {
+    overflow-x: hidden;
+    width: 100%;
+    }
     .header-logo{
         margin-top: 27vh;
         margin-bottom: 23vh;
@@ -1057,4 +1082,35 @@ body.menu-active {
   position: fixed;
   inset: 0;
   pointer-events: none;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.9s ease;
+  will-change: transform, opacity;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+.from-left {
+  transform: translateX(-100px);
+}
+.from-right {
+  transform: translateX(100px);
+}
+.from-left-p {
+  transform: translateX(-70px);
+}
+.from-right-p {
+  transform: translateX(70px);
+}
+#main-logo {
+  transition: transform 0.7s ease;
+  transform-origin: center top;
+}
+#main-logo.zoom-in {
+  transform: scale(0.92);
 }
