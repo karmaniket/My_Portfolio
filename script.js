@@ -104,7 +104,7 @@
         }
         });
     },
-    { threshold: 0.3 }
+    { threshold: 0.15 }
     );
     document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
     const header = document.getElementById("main-logo");

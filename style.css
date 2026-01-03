@@ -1109,10 +1109,10 @@ body.menu-active {
   transform: translateX(100px);
 }
 .from-left-p {
-  transform: translateX(-70px);
+  transform: translateX(-50px);
 }
 .from-right-p {
-  transform: translateX(70px);
+  transform: translateX(50px);
 }
 #main-logo {
   transition: transform 0.7s ease;
