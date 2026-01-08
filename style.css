@@ -467,10 +467,10 @@ nav ul li a:hover {
 .project-btn:hover{
     color: #fff;
 }
-.project-card div:hover{
-    /* transform: translateY(-10px); */
-    /* color: #000; */
-}
+/* .project-card div:hover{
+    transform: translateY(-10px);
+    color: #000;
+} */
 
 /* ------------------------------------------ Contact ------------------------------------------ */
 
