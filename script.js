@@ -1,3 +1,23 @@
+    const moreBtn = document.querySelector('.more-btn');
+    const projects = document.querySelectorAll('.project');
+    const VISIBLE_COUNT = 3;
+
+    projects.forEach((p, i) => {
+    if (i >= VISIBLE_COUNT) p.style.display = 'none';
+    });
+    let expanded = false;
+    moreBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    expanded = !expanded;
+    projects.forEach((p, i) => {
+        if (i >= VISIBLE_COUNT) {
+        p.style.display = expanded ? 'flex' : 'none';
+        }
+    });
+    moreBtn.textContent = expanded ? 'SHOW LESS' : 'SEE MORE';
+    });
+
+    
     (() => {
     const canvas = document.getElementById("stars");
     if (!canvas) return;
