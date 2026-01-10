@@ -1,16 +1,15 @@
     const moreBtn = document.querySelector('.more-btn');
     const projects = document.querySelectorAll('.project');
-    const VISIBLE_COUNT = 3;
-
-    projects.forEach((p, i) => {
-    if (i >= VISIBLE_COUNT) p.style.display = 'none';
-    });
+    const VISIBLE = 3;
     let expanded = false;
+    projects.forEach((p, i) => {
+    if (i >= VISIBLE) p.style.display = 'none';
+    });
     moreBtn.addEventListener('click', (e) => {
     e.preventDefault();
     expanded = !expanded;
     projects.forEach((p, i) => {
-        if (i >= VISIBLE_COUNT) {
+        if (i >= VISIBLE) {
         p.style.display = expanded ? 'flex' : 'none';
         }
     });

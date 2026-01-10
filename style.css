@@ -402,7 +402,7 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 .project {
-    border-radius: 10px;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
     border: 3px solid #262626;
@@ -439,6 +439,7 @@ nav ul li a:hover {
     transform: translateX(-99%);
     transition: transform 0.25s cubic-bezier(.4,0,.2,1);
     pointer-events: none;
+    border: none !important;
 }
 .card-title {
     font-size: 30px;
@@ -917,14 +918,14 @@ body{
 /* ------------------------------------------ Res Projects ------------------------------------------ */
 
 .container1 {
-    padding: 40px 7%;
+    padding: 40px 5%;
 }
 .project-card {
     grid-template-columns: 1fr;
     grid-gap: 50px;
 }
 .project-card div {
-    padding: 15px 15px 60px;
+    padding: 0;
     border: 2px solid #262626;
 }
 .project-card img {
@@ -943,10 +944,29 @@ body{
     margin: 0 0 25px;
     clear: both;
 }
-.project-card div a {
-    left: 50%;
+.project-card div .project-btn {
+    left: 17%;
     transform: translateX(-50%);
-    bottom: 15px;
+    bottom: 10px;
+}
+.layer h2, .pro-para{
+    padding-left: 7px;
+}
+.layer h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+    margin-top: -23px;
+}
+.src-btn i {
+    bottom: 0px;
+    left: 265px;
+    font-size: 35px;
+}
+.project a {
+    font-size: 16px;
+}
+.project-btn {
+    padding: 7px 25px;
 }
 #projects h1{
     display: none;
