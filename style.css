@@ -154,8 +154,7 @@ nav ul li a:hover {
 #about{
     padding: 50px 0;
     color: #E8E8ED;
-    background: #000027;
-        /* #191970 */
+    /* background: #000027; */
     font-size: 25px;
 }
 .row{
@@ -475,7 +474,7 @@ nav ul li a:hover {
 .src-btn i {
     position: absolute;
     bottom: 1px;
-    left: 330px;
+    left: 338px;
     font-size: 40px;
     z-index: 2;
     color: #00f5d0;
@@ -516,51 +515,6 @@ nav ul li a:hover {
 .more-btn:hover{
     color: #fff;
 }
-/* .project-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    margin-top: 50px;
-}
-.project-card div {
-    display: block;
-    border: 1px solid #00f5d0;
-    padding: 20px;
-    border-radius: 7px;
-    transition: background 0.5s, transform 0.5s;
-    position: relative;
-    text-align: left;
-}
-.card-title {
-    font-size: 35px;
-    margin: 15px 0 15px;
-    display: block;
-    overflow: hidden;
-}
-.project-card div p {
-    font-family: "Space Mono", monospace;
-    font-size: 18px;
-    margin: 0 15px 50px 0;
-    text-align: left;
-    overflow: hidden;
-}
-.project-card img {
-    width: 35%;
-    border: 1px solid #262626;
-    border-radius: 5px;
-    float: right;
-    margin-left: 10px;
-    opacity: 0.9;
-}
-.project-card div a {
-    text-decoration: none;
-    color: #000;
-    font-size: 17px;
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    text-align: left;
-} */
 .project-btn {
     display: block;
     margin: 0 auto;
@@ -958,8 +912,8 @@ body{
     margin-top: 0;
 }
 .src-btn i {
-    bottom: 0;
-    left: 265px;
+    bottom: -7px;
+    left: 273px;
     font-size: 35px;
 }
 .project a {
@@ -1182,7 +1136,7 @@ body.menu-active {
         flex-direction: column;
     }
     .about-col-1 img{
-        height: 22vh;
+        height: 20vh;
         width: auto;
     }
     .res-about{
@@ -1230,7 +1184,15 @@ body.menu-active {
     
     /* Projects */
     
-    .container1{
+    .layer h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    }
+    .project-card {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 30px;
+    }
+    /* .container1{
         padding: 30px 7%;
     }
     #projects{
@@ -1252,7 +1214,7 @@ body.menu-active {
     }
     .project-card div p{
         font-size: 10px;
-    }
+    } */
 
     /* Contact */
 
@@ -1299,6 +1261,22 @@ body.menu-active {
     }
     .about-col-2.from-right {
     transform: none !important;
+    }
+    .project-card {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+    }
+    .card-title {
+    font-size: 25px;
+    margin-bottom: 0;
+    }
+    .pro-para {
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .src-btn i {
+    bottom: 1px;
+    left: 260px;
     }
 }
 #stars {
