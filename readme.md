@@ -4,8 +4,9 @@ A modern, responsive personal portfolio website for showcasing projects, worksho
 
 ## [Live](https://karmaniket.vercel.app/)
 
-[Desktop-View](https://github.com/user-attachments/assets/d4b62272-3889-4b8f-aab8-4b38f150d10d)
-[Smartphone-View](https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102)
+https://github.com/user-attachments/assets/d4b62272-3889-4b8f-aab8-4b38f150d10d
+
+https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 
 ## Features
 
