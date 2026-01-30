@@ -14,38 +14,38 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 - **Animated UI:** Smooth reveal animations and interactive elements using the Intersection Observer API.
 - **Styled Scrollbar:** Custom scrollbar for a modern, visually consistent aesthetic.
 - **Projects Showcase:** Grid layout for featured projects with expandable view and direct links to live demos and source code.
-- **Workshops & VFX:** Dedicated sections for sharing workshop content, downloadable resources, and VFX video demos.
+- **Workshop:** Dedicated sections for sharing additional content, downloadable resources, and VFX video demos.
 - **Social Links:** Quick access to YouTube, Instagram, Discord, Twitter, GitHub, Kaggle, and LinkedIn for networking and outreach.
 - **Resume Button:** Prominent button linking to resume hosted on Google Drive for easy access by recruiters and collaborators.
-- **Icons:** Extensive use of Font Awesome for a wide range of icons across the website.
+- **Menu Icon Animation:** Responsive hamburger menu icon with animated transitions for mobile navigation, enhancing user experience on smaller screens.
 - **Custom Visuals:** Animated starfield background using Canvas API for a dynamic, engaging look.
 - **Contact Form:** Integrated with Google Sheets for message submissions, capturing name, email, message, and automatic date/time using Fetch API and Google Apps Script.
 - **Cloud Deployment:** Deployed on Vercel and integrated with Vercel live analytics and speed insights for real-time performance, security, and traffic monitoring.
 
 ## Technologies Used
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Canvas API**
-- **Intersection Observer API**
-- **Fetch API**
-- **Google Apps Script**
-- **Google Sheets**
-- **Vercel**
-- **Font Awesome**
-- **Google Fonts, CDNFonts, OnlineWebFonts**
+```bash
+- HTML5
+- CSS3
+- JavaScript
+- Canvas API
+- Intersection Observer API
+- Fetch API
+- Google Apps Script
+- Google Sheets
+- Vercel
+```
 
 ## File Structure
 
 ```
 ├── index.html         # Main portfolio page
 ├── vfx.html           # VFX showcase page
-├── style.css          # Main stylesheet (legacy, see stylesheet.css)
+├── style.css          # Main stylesheet
 ├── stylesheet.css     # Main active stylesheet
 ├── script.js          # Main JavaScript for interactivity
 ├── vfx.js             # VFX page JavaScript
-├── asset/             # Images, icons, fonts, and videos
+├── assets/            # Images, icons, fonts, and videos
 └── readme.md          # Project documentation
 ```
 
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
    cd My_Portfolio
    ```
 2. **Open `index.html` in your browser.**
-   - No build step required; all assets are static.
+- No build step required; all assets are static.
 
 ## Form Integration with Google Sheets
 
@@ -146,15 +146,15 @@ function doPost (e) {
 
 ## Customization
 
-### Profile & Socials:
-  - Update `asset/profile.jpg` for your photo.
+### 1. Profile & Socials:
+  - Update `assets/profile.jpg` for your photo.
   - Edit social links in `index.html` as needed.
-### Projects & Workshops:
-  - Add project images to `asset/projects/` and update the project cards in `index.html`.
+### 2. Projects & Workshops:
+  - Add project images to `assets/projects/` and update the project cards in `index.html`.
   - Add your additional works in the Workshop section.
-### Contact Form:
+### 3. Contact Form:
   - The form submits to a Google Apps Script endpoint. Update the `scriptURL` in `script.js` to use your own endpoint if needed.
-### Resume:
+### 4. Resume:
   - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
 ## Accessibility & Best Practices
@@ -179,7 +179,7 @@ function doPost (e) {
 - **Google Fonts:** For providing high-quality open-source fonts.
 - **Font Awesome:** For the icon library used throughout the site.
 - **CDNFonts and OnlineWebFonts:** For additional font resources.
-- **Theme Inspiration:** The website's visual theme and color palette are inspired by [the Mercedes AMG PETRONAS F1 Team.](https://www.mercedesamgf1.com/)
+- **Theme Inspiration:** The website's visual theme and color palette are inspired by [The Mercedes AMG PETRONAS F1 Team.](https://www.mercedesamgf1.com/)
 
 ## License
 
