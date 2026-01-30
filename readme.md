@@ -1,6 +1,6 @@
 # Karmaniket Portfolio Website
 
-A modern, responsive personal portfolio website for showcasing projects, workshops, VFX work, and contact information. Built with HTML, CSS, and JavaScript.
+A modern, fully responsive personal portfolio website designed to showcase your projects, workshops, VFX work, and contact information in a visually engaging and professional manner. Built with HTML, CSS, and JavaScript, this site features dynamic UI elements, seamless navigation, and easy customization. The portfolio includes dedicated sections for project highlights, blog posts, downloadable blueprints/designs, media sharing (including VFX), and a robust contact form integrated with Google Sheets.
 
 ## [Live](https://karmaniket.vercel.app/)
 
@@ -10,15 +10,15 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 
 ## Features
 
-- **Responsive Design:** Adapts seamlessly to desktop and mobile devices for optimal viewing experience.
+- **Responsive Design:** Adapts seamlessly to desktop and mobile devices for an optimal viewing experience.
 - **Animated UI:** Smooth reveal animations and interactive elements using the Intersection Observer API.
 - **Styled Scrollbar:** Custom scrollbar for a modern, visually consistent aesthetic.
-- **Projects Showcase:** Grid layout for featured projects with expandable view and direct links to live demos and source code.
-- **Workshop:** Dedicated sections for sharing additional content, downloadable resources, and VFX video demos.
+- **Projects Showcase:** Grid layout for featured projects with expandable views and direct links to live demos and source code.
+- **Workshop:** Dedicated sections for sharing blog posts, downloadable blueprints/designs, and media content such as VFX videos.
 - **Social Links:** Quick access to YouTube, Instagram, Discord, Twitter, GitHub, Kaggle, and LinkedIn for networking and outreach.
-- **Resume Button:** Prominent button linking to resume hosted on Google Drive for easy access by recruiters and collaborators.
+- **Resume Button:** Prominent button linking to your resume hosted on Google Drive for easy access by recruiters and collaborators.
 - **Menu Icon Animation:** Responsive hamburger menu icon with animated transitions for mobile navigation, enhancing user experience on smaller screens.
-- **Custom Visuals:** Animated starfield background using Canvas API for a dynamic, engaging look.
+- **Custom Visuals:** Animated starfield background using the Canvas API for a dynamic, engaging look.
 - **Meteor Shower Customization:** The animated starfield (meteor shower) background is fully tunable via JavaScript variables for density, speed, color, and behavior. Developers can easily adjust parameters such as the number of meteors, their speed, tail length, and color to match their own style or performance needs. This makes the visual effect both flexible and educational for those interested in creative coding or UI animation.
 - **Contact Form:** Integrated with Google Sheets for message submissions, capturing name, email, message, and automatic date/time using Fetch API and Google Apps Script.
 - **Cloud Deployment:** Deployed on Vercel and integrated with Vercel live analytics and speed insights for real-time performance, security, and traffic monitoring.
@@ -52,6 +52,7 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 
 ## Getting Started
 
+### **Setup**
 - **Clone the repository:**
    ```sh
    git clone https://github.com/karmaniket/My_Portfolio
@@ -59,7 +60,7 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
    ```
 - **Open `index.html` in your browser. No build step required; all assets are static.**
 
-### Customization
+### **Customization**
 
 #### 1. Profile & Socials:
   - Update `assets/profile.jpg` for your photo.
@@ -72,11 +73,11 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 #### 4. Resume:
   - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
-## Form Integration with Google Sheets
+### **Form Integration with Google Sheets**
 
 This project uses a Google Apps Script backend to collect contact form submissions directly into a Google Sheet. Follow these steps to set up your own integration:
 
-### 1. Set Up Google Apps Script Backend
+#### 1. Set Up Google Apps Script Backend
 
 ```javascript
 var sheetName = 'Your_Sheet_Name'
@@ -112,7 +113,7 @@ function doPost (e) {
 }
 ```
 
-### 2. Add the Contact Form to Your HTML
+#### 2. Add the Contact Form to Your HTML
 
 ```html
 <form name="submit-to-google-sheet">
@@ -126,7 +127,7 @@ function doPost (e) {
 <span id="msg"></span>
 ```
 
-### 3. Connect the Form with JavaScript
+#### 3. Connect the Form with JavaScript
 
 ```javascript
     const scriptURL = 'Your_Script_URL'
@@ -157,7 +158,7 @@ function doPost (e) {
     })
 ```
 
-## Meteor Shower Customization Guide
+### Meteor Shower Customization Guide
 
 The animated starfield (meteor shower) background is highly customizable. You can tune its appearance and behavior by adjusting key parameters in `script.js`:
 
@@ -220,4 +221,4 @@ This project is licensed for personal, non-commercial use only. You must provide
 
 ---
 
-**Author:** [Karmaniket](https://github.com/karmaniket)
+#### **Author:** [Karmaniket](https://github.com/karmaniket)
