@@ -19,6 +19,7 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 - **Resume Button:** Prominent button linking to resume hosted on Google Drive for easy access by recruiters and collaborators.
 - **Menu Icon Animation:** Responsive hamburger menu icon with animated transitions for mobile navigation, enhancing user experience on smaller screens.
 - **Custom Visuals:** Animated starfield background using Canvas API for a dynamic, engaging look.
+- **Meteor Shower Customization:** The animated starfield (meteor shower) background is fully tunable via JavaScript variables for density, speed, color, and behavior. Developers can easily adjust parameters such as the number of meteors, their speed, tail length, and color to match their own style or performance needs. This makes the visual effect both flexible and educational for those interested in creative coding or UI animation.
 - **Contact Form:** Integrated with Google Sheets for message submissions, capturing name, email, message, and automatic date/time using Fetch API and Google Apps Script.
 - **Cloud Deployment:** Deployed on Vercel and integrated with Vercel live analytics and speed insights for real-time performance, security, and traffic monitoring.
 
@@ -143,6 +144,37 @@ function doPost (e) {
         .catch(error => console.error('Error!', error.message))
     })
 ```
+
+## Meteor Shower Customization Guide
+
+The animated starfield (meteor shower) background is highly customizable. You can tune its appearance and behavior by adjusting key parameters in `script.js`:
+
+```javascript
+const isMobile = window.innerWidth < 768;
+const MaxMeteors = isMobile ? 500 : 1000;           // Maximum number of meteors
+const MaxDistance = isMobile ? 1000 : 500;          // Minimum distance between meteors
+const SpawnInterval = isMobile ? 500 : 250;         // Meteor spawn rate (ms)
+const baseAngle = Math.PI * 0.2;                    // Base angle of meteor trajectory
+const spread = Math.PI * 0.05;                      // Spread of meteor angles
+const LifeMin = isMobile ? 40 : 100;                // Minimum meteor life
+const LifeRange = isMobile ? 40 : 100;              // Range of meteor life
+const SizeMin = isMobile ? 0.5 : 0.7;               // Minimum meteor size
+const SizeRange = isMobile ? 1.5 : 1.7;             // Range of meteor size
+const tailMultiplier = isMobile ? 2.5 : 10;         // Controls the length of meteor tails
+ctx.strokeStyle = `rgba(200,230,255,${alpha})`;     // RGBA color and opacity for meteors
+const speed = isMobile ? 4 + Math.random() * 2 : 3 + Math.random() * 2; // Meteor speed
+```
+
+**How to Customize:**
+- **Density:** Increase or decrease `MaxMeteors` for more or fewer meteors.
+- **Speed:** Adjust the `speed` calculation for faster or slower meteors.
+- **Tail Length:** Change `tailMultiplier` for longer or shorter meteor trails.
+- **Color:** Modify the RGBA values in `ctx.strokeStyle` for different meteor colors.
+- **Spawn Rate:** Change `SpawnInterval` for how often new meteors appear.
+- **Size:** Adjust `SizeMin` and `SizeRange` for thicker or thinner meteors.
+- **Angle/Spread:** Tweak `baseAngle` and `spread` for different meteor directions.
+
+These parameters allow you to create a unique visual effect that matches your style or performance needs. Experiment with the values to see real-time changes in the animation.
 
 ## Customization
 
