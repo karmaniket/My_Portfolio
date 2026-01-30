@@ -52,13 +52,25 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 
 ## Getting Started
 
-1. **Clone the repository:**
+- **Clone the repository:**
    ```sh
    git clone https://github.com/karmaniket/My_Portfolio
    cd My_Portfolio
    ```
-2. **Open `index.html` in your browser.**
-- No build step required; all assets are static.
+- **Open `index.html` in your browser. No build step required; all assets are static.**
+
+### Customization
+
+#### 1. Profile & Socials:
+  - Update `assets/profile.jpg` for your photo.
+  - Edit social links in `index.html` as needed.
+#### 2. Projects & Workshops:
+  - Add project images to `assets/projects/` and update the project cards in `index.html`.
+  - Add your additional works in the Workshop section.
+#### 3. Contact Form:
+  - The form submits to a Google Apps Script endpoint. Update the `scriptURL` in `script.js` to use your own endpoint if needed.
+#### 4. Resume:
+  - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
 ## Form Integration with Google Sheets
 
@@ -175,19 +187,6 @@ const speed = isMobile ? 4 + Math.random() * 2 : 3 + Math.random() * 2; // Meteo
 - **Angle/Spread:** Tweak `baseAngle` and `spread` for different meteor directions.
 
 These parameters allow you to create a unique visual effect that matches your style or performance needs. Experiment with the values to see real-time changes in the animation.
-
-## Customization
-
-### 1. Profile & Socials:
-  - Update `assets/profile.jpg` for your photo.
-  - Edit social links in `index.html` as needed.
-### 2. Projects & Workshops:
-  - Add project images to `assets/projects/` and update the project cards in `index.html`.
-  - Add your additional works in the Workshop section.
-### 3. Contact Form:
-  - The form submits to a Google Apps Script endpoint. Update the `scriptURL` in `script.js` to use your own endpoint if needed.
-### 4. Resume:
-  - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
 ## Accessibility & Best Practices
 
