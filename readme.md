@@ -1,6 +1,6 @@
 # Karmaniket Portfolio Website
 
-A modern, fully responsive personal portfolio website designed to showcase your projects, workshops, VFX work, and contact information in a visually engaging and professional manner. Built with HTML, CSS, and JavaScript, this site features dynamic UI elements, seamless navigation, and easy customization. The portfolio includes dedicated sections for project highlights, blog posts, downloadable blueprints/designs, media sharing (including VFX), and a robust contact form integrated with Google Sheets.
+A modern, fully responsive personal portfolio website designed to showcase your projects, workshops, and contact information in a visually engaging and professional manner. Built with HTML, CSS, and JavaScript, this site features dynamic UI elements, seamless navigation, and easy customization. The portfolio includes dedicated sections for project highlights, blog posts, downloadable blueprints/designs, media sharing (VFX), and a robust contact form integrated with Google Sheets.
 
 ## [Live](https://karmaniket.vercel.app/)
 
@@ -52,7 +52,6 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 
 ## Getting Started
 
-### **Setup**
 - **Clone the repository:**
    ```sh
    git clone https://github.com/karmaniket/My_Portfolio
@@ -60,24 +59,24 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
    ```
 - **Open `index.html` in your browser. No build step required; all assets are static.**
 
-### **Customization**
+### Customization
 
-#### 1. Profile & Socials:
+**1. Profile & Socials:**
   - Update `assets/profile.jpg` for your photo.
   - Edit social links in `index.html` as needed.
-#### 2. Projects & Workshops:
+**2. Projects & Workshops:**
   - Add project images to `assets/projects/` and update the project cards in `index.html`.
   - Add your additional works in the Workshop section.
-#### 3. Contact Form:
+**3. Contact Form:**
   - The form submits to a Google Apps Script endpoint. Update the `scriptURL` in `script.js` to use your own endpoint if needed.
-#### 4. Resume:
+4. **Resume:**
   - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
-### **Form Integration with Google Sheets**
+## Form Integration with Google Sheets
 
 This project uses a Google Apps Script backend to collect contact form submissions directly into a Google Sheet. Follow these steps to set up your own integration:
 
-#### 1. Set Up Google Apps Script Backend
+### 1. Set Up Google Apps Script Backend
 
 ```javascript
 var sheetName = 'Your_Sheet_Name'
@@ -113,7 +112,7 @@ function doPost (e) {
 }
 ```
 
-#### 2. Add the Contact Form to Your HTML
+### 2. Add the Contact Form to Your HTML
 
 ```html
 <form name="submit-to-google-sheet">
@@ -127,7 +126,7 @@ function doPost (e) {
 <span id="msg"></span>
 ```
 
-#### 3. Connect the Form with JavaScript
+### 3. Connect the Form with JavaScript
 
 ```javascript
     const scriptURL = 'Your_Script_URL'
@@ -158,7 +157,7 @@ function doPost (e) {
     })
 ```
 
-### Meteor Shower Customization Guide
+## Meteor Shower Customization Guide
 
 The animated starfield (meteor shower) background is highly customizable. You can tune its appearance and behavior by adjusting key parameters in `script.js`:
 
@@ -178,7 +177,7 @@ ctx.strokeStyle = `rgba(200,230,255,${alpha})`;     // RGBA color and opacity fo
 const speed = isMobile ? 4 + Math.random() * 2 : 3 + Math.random() * 2; // Meteor speed
 ```
 
-**How to Customize:**
+### How to Customize:
 - **Density:** Increase or decrease `MaxMeteors` for more or fewer meteors.
 - **Speed:** Adjust the `speed` calculation for faster or slower meteors.
 - **Tail Length:** Change `tailMultiplier` for longer or shorter meteor trails.
@@ -215,10 +214,9 @@ These parameters allow you to create a unique visual effect that matches your st
 
 ## License
 
-**Strict Attribution Required**
-
-This project is licensed for personal, non-commercial use only. You must provide clear and visible credit to the original author (Karmaniket) on every public or private use, fork, or deployment of this website or its derivatives. Removal or obfuscation of author attribution is strictly prohibited. For any other use, contact the author for explicit permission.
+This project is licensed for personal, non-commercial use only. You must provide clear and visible credit to the original author ([Karmaniket](https://github.com/karmaniket)) on every public or private use, fork, or deployment of this website or its derivatives. Removal or obfuscation of author attribution is strictly prohibited. This ensures that credit and attribution are always given to the original author.
+For any other use, contact the author for explicit permission.
 
 ---
 
-#### **Author:** [Karmaniket](https://github.com/karmaniket)
+### **Author: [Karmaniket](https://github.com/karmaniket)**
