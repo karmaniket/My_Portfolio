@@ -64,12 +64,15 @@ https://github.com/user-attachments/assets/af08b707-cdde-409d-a618-b0e9a2d16102
 **1. Profile & Socials:**
   - Update `assets/profile.jpg` for your photo.
   - Edit social links in `index.html` as needed.
+
 **2. Projects & Workshops:**
   - Add project images to `assets/projects/` and update the project cards in `index.html`.
   - Add your additional works in the Workshop section.
+
 **3. Contact Form:**
   - The form submits to a Google Apps Script endpoint. Update the `scriptURL` in `script.js` to use your own endpoint if needed.
-4. **Resume:**
+
+**4. Resume:**
   - Update the resume link in `index.html` to your own Google Drive or preferred location.
 
 ## Form Integration with Google Sheets
@@ -214,7 +217,7 @@ These parameters allow you to create a unique visual effect that matches your st
 
 ## License
 
-This project is licensed for personal, non-commercial use only. You must provide clear and visible credit to the original author ([Karmaniket](https://github.com/karmaniket)) on every public or private use, fork, or deployment of this website or its derivatives. Removal or obfuscation of author attribution is strictly prohibited. This ensures that credit and attribution are always given to the original author.
+This project is licensed for personal, non-commercial use only. You must provide clear and visible credit to the original author ([Karmaniket](https://github.com/karmaniket)) on every public or private use, fork, or deployment of this website or its derivatives. Removal or obfuscation of author attribution is strictly prohibited. This ensures that credit and attribution are always given to the original author. <br>
 For any other use, contact the author for explicit permission.
 
 ---
